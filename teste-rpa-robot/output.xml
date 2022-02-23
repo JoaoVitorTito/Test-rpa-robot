@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.5 on win32)" generated="20220223 17:20:34.558" rpa="true" schemaversion="2">
+<suite id="s1" name="Tasks" source="d:\teste-rpa-robot\tasks.robot">
+<test id="s1-t1" name="Test RPA form web">
+<kw name="Open the intranet website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://front.serverest.dev/login</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20220223 17:20:39.325" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220223 17:20:39.356" level="INFO">Created download root directory: C:\Users\PICHAU\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220223 17:20:39.357" level="INFO">Created symlink directory: C:\Users\PICHAU\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220223 17:20:39.359" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220223 17:20:40.439" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20220223 17:20:40.439" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20220223 17:20:40.440" level="INFO">Opening url 'https://front.serverest.dev/login'</msg>
+<status status="PASS" starttime="20220223 17:20:39.322" endtime="20220223 17:20:43.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:20:44.758" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:20:43.753" endtime="20220223 17:20:44.759"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:39.318" endtime="20220223 17:20:44.760"/>
+</kw>
+<kw name="Enter Register adm">
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:20:44.767" endtime="20220223 17:20:44.783"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:44.786" level="INFO">Clicking link 'css=[data-testid="cadastrar"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:44.785" endtime="20220223 17:20:44.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:20:45.847" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:20:44.843" endtime="20220223 17:20:45.847"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:44.763" endtime="20220223 17:20:45.849"/>
+</kw>
+<kw name="Register adm">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:20:46.869" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:20:45.853" endtime="20220223 17:20:46.869"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>nome</arg>
+<arg>random</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:46.873" level="INFO">Typing text 'random' into text field 'nome'.</msg>
+<status status="PASS" starttime="20220223 17:20:46.871" endtime="20220223 17:20:46.955"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>email</arg>
+<arg>isuhgad@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:46.959" level="INFO">Typing text 'isuhgad@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20220223 17:20:46.957" endtime="20220223 17:20:47.049"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>password</arg>
+<arg>12345</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:47.052" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20220223 17:20:47.089" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220223 17:20:47.125" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220223 17:20:47.050" endtime="20220223 17:20:47.126"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>administrador</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:47.129" level="INFO">Clicking button 'administrador'.</msg>
+<status status="PASS" starttime="20220223 17:20:47.127" endtime="20220223 17:20:47.178"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:47.181" level="INFO">Clicking button 'css=[data-testid="cadastrar"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:47.180" endtime="20220223 17:20:47.236"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:45.851" endtime="20220223 17:20:47.237"/>
+</kw>
+<kw name="EnterProduct">
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrarProdutos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:20:47.241" endtime="20220223 17:20:51.155"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrarProdutos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:51.158" level="INFO">Clicking link 'css=[data-testid="cadastrarProdutos"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:51.156" endtime="20220223 17:20:51.203"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:47.239" endtime="20220223 17:20:51.205"/>
+</kw>
+<kw name="Fill the products using the data from the Excel file">
+<kw name="Open Workbook" library="RPA.Excel.Files">
+<arg>Tabela de Produtos.xlsx</arg>
+<doc>Open an existing Excel workbook.</doc>
+<msg timestamp="20220223 17:20:51.383" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001DDD3407A48&gt;</msg>
+<status status="PASS" starttime="20220223 17:20:51.208" endtime="20220223 17:20:51.384"/>
+</kw>
+<kw name="Read Worksheet As Table" library="RPA.Excel.Files">
+<var>${product_sells}</var>
+<arg>header=True</arg>
+<doc>Read the content of a worksheet into a Table container. Allows
+sorting/filtering/manipulating using the ``RPA.Tables`` library.</doc>
+<msg timestamp="20220223 17:20:51.753" level="INFO">Created table: Table(columns=['Nome', 'Preço', 'Descrição', 'Quantidade'], rows=5)</msg>
+<msg timestamp="20220223 17:20:51.754" level="INFO">${product_sells} = Table(columns=['Nome', 'Preço', 'Descrição', 'Quantidade'], rows=5)</msg>
+<status status="PASS" starttime="20220223 17:20:51.385" endtime="20220223 17:20:51.754"/>
+</kw>
+<kw name="Close Workbook" library="RPA.Excel.Files">
+<doc>Close the active workbook.</doc>
+<msg timestamp="20220223 17:20:51.757" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001DDD3407A48&gt;</msg>
+<status status="PASS" starttime="20220223 17:20:51.756" endtime="20220223 17:20:51.757"/>
+</kw>
+<for flavor="IN">
+<var>${product_sell}</var>
+<value>@{product_sells}</value>
+<iter>
+<var name="${product_sell}">{'Nome': 'Smartphone S', 'Preço': 1300.0, 'Descrição': 'Smartphone de última geração.', 'Quantidade': 100.0}</var>
+<kw name="Register Product">
+<arg>${product_sell}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:20:52.774" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:20:51.765" endtime="20220223 17:20:52.774"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:52.777" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:52.776" endtime="20220223 17:20:52.823"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>nome</arg>
+<arg>${product_sell}[Nome]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:52.826" level="INFO">Typing text 'Smartphone S' into text field 'nome'.</msg>
+<status status="PASS" starttime="20220223 17:20:52.824" endtime="20220223 17:20:52.911"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>price</arg>
+<arg>${product_sell}[Preço]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:52.915" level="INFO">Typing text '1300.0' into text field 'price'.</msg>
+<status status="PASS" starttime="20220223 17:20:52.912" endtime="20220223 17:20:52.995"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="descricao"]</arg>
+<arg>${product_sell}[Descrição]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:52.998" level="INFO">Typing text 'Smartphone de última geração.' into text field 'css=[data-testid="descricao"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:52.996" endtime="20220223 17:20:53.100"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>quantity</arg>
+<arg>${product_sell}[Quantidade]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:53.104" level="INFO">Typing text '100.0' into text field 'quantity'.</msg>
+<status status="PASS" starttime="20220223 17:20:53.101" endtime="20220223 17:20:53.176"/>
+</kw>
+<kw name="Http Get" library="RPA.HTTP">
+<arg>https://api.thecatapi.com/v1/images/search</arg>
+<arg>overwrite=True</arg>
+<doc>A helper method for ``Get Request`` that will create a session, perform GET
+request, and store the target file, if set by the ``target_file`` parameter.</doc>
+<msg timestamp="20220223 17:20:53.179" level="INFO">Creating a new HTTP session</msg>
+<msg timestamp="20220223 17:20:53.180" level="INFO">Creating Session using : alias=rpasession_alias.httpsapi.thecatapi.com, url=https://api.thecatapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg timestamp="20220223 17:20:53.700" level="INFO">GET Request : url=https://api.thecatapi.com/v1/images/search 
+ path_url=/v1/images/search 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:20:53.701" level="INFO">GET Response : url=https://api.thecatapi.com/v1/images/search 
+ status=200, reason=OK 
+ headers={'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'vary': 'Origin', 'expires': 'Tue, 03 Jul 2001 06:00:00 GMT', 'last-modified': 'Wed Feb 23 2022 20:20:54 GMT+0000 (Coordinated Universal Time)', 'cache-control': 'post-check=0, pre-check=0', 'content-type': 'application/json; charset=utf-8', 'x-response-time': '66ms', 'X-Cloud-Trace-Context': '6684df33b2ce3e6d73ef0b432691e6d6', 'Date': 'Wed, 23 Feb 2022 20:20:54 GMT', 'Server': 'Google Frontend', 'Content-Length': '115'} 
+ body=[{"breeds":[],"id":"qhsvgRs4k","url":"https://cdn2.thecatapi.com/images/qhsvgRs4k.jpg","width":4032,"height":2268}] 
+ </msg>
+<status status="PASS" starttime="20220223 17:20:53.177" endtime="20220223 17:20:53.702"/>
+</kw>
+<kw name="Download" library="RPA.HTTP">
+<arg>https://cdn2.thecatapi.com/images/ebv.jpg</arg>
+<arg>${OUTPUT_DIR}${/}imagem.jpg</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<msg timestamp="20220223 17:20:53.705" level="INFO">Creating a new HTTP session</msg>
+<msg timestamp="20220223 17:20:53.706" level="INFO">Creating Session using : alias=rpasession_alias.httpscdn2.thecatapi.com, url=https://cdn2.thecatapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg timestamp="20220223 17:20:53.804" level="INFO">GET Request : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ path_url=/images/ebv.jpg 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:20:54.408" level="INFO">GET Response : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 23 Feb 2022 20:20:54 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '28025', 'Connection': 'keep-alive', 'last-modified': 'Thu, 27 Sep 2018 01:09:17 GMT', 'etag': '"236b60fbfb5cde085186493609f37579"', 'x-cache': 'RefreshHit from cloudfront', 'via': '1.1 851117d0ba7b2cbe0cf02406c40397d8.cloudfront.net (CloudFront)', 'x-amz-cf-pop': 'GIG51-C2', 'x-amz-cf-id': 'mN-pc-ggotwdc2OuU_yshN2m1EOWWD5Ci6xv-vhvEZuVx8g6YtwhYw==', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '48', 'Accept-Ranges': 'bytes', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=5t%2FGZG8qBK5IEUSu7mJQ2%2F66d5Xf%2BHAE9kVPjZCx7aYWECg9zlde9KTiJxXXfN493JRlAbECJKPenIk5M6pZgrddsQB6KQHVtM3dtJsssfFpbPzklWkDxqzaCpAQZ%2FvHrA3foMG2gb0YBnSgr93xVd8%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6e2328503adb62a1-BSB', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=����JFIF��C		��C
+
+���"������ߥS=��*��e$�$����=��,�:넒��H@;;��i�c�m.8C}tD�A��S����o|��nY�Ц&gt;�k��+�M�7^#��+�y�|a����P��t˰��)?(,f߻�����.��O�=B�y�sW��b��/V̘Yw���Vo�U�Mz,�M-ǟ��U�Ď_a@��7����; ���Cm�}/����9�S2����Ηf�u3���b��S�ރr����R^պ�c�Hh��"Y�Z�4���o�%I\�*6��z?�\�i��ԢD@���i����Z����k�H�}/5��5�1����#f�t�L:Ҹ�sg�Ѱ�T�B��G������]h޷�m�&lt;�C8��U�V?`�IX�BI��W��qj3SQ�FM�2F����Ұ�U���e$�I!$����(���N�͆���dUf�+�xT�����$�I!$��HY�%��$�&lt;����;�cΈ������%����BI	$,Λ#5V!�%���d1�-F�f٪~`ۛ�F��IX�BK�0�����O�&lt;�Y}m	�TԳT2m�SfA`rhn&gt;*פ�$�E�&gt;Z@�$ݜc�2��{�=Ii��U&gt;6��\�pvpۯI^I$7�7�s43�j��lD3��o�[nVe}yQL�x�^�h kf���H��X	����b���&amp;f����pAK#��&lt;�6������פ�4�"�M�y��'�=7�ƭd.[7FU��؎�d3��U���D[�����qk)h��"�=&gt;�=!o�NV2�#b��.�FI9��K_Hh��3�@+d]@����k������zJI�f���6Ih�!B�-�s�s�����א0�ĕ��.\���҄H�M�
+x�Ϋ&amp;�TOc�B u��z����$����%�h�c�(�׹��.���B9�L�%kUzĂ����a��\�N�F��g޸�q޷�z�3���XbΜ
+�V�qܽ�IJ��S��Ϋ����f�a���`lіrg/�BKr������0r$� J��P��׊��[ZCa%�m&lt;5p�8_MFIy=I�Dnx�gR����Խ4�i@�,sW�+:V_�$w��?K;���ޓ^sT�ݝK47�Y�X���M�:%��i\�ޜI��⃜����Z1������^ƕ��`�&lt;�Wچ�m t�y�=�9%�2�Ƌ��B��VK^�����&lt;bpy�F;�$07
+�e8�'R�qr�%{UnP��ŗSlrBq쐑�4�G�.§��*E���X!�+g�P�+l�dM����Z�$bIcD���"�2�U�s�Z�!9u��Y���oPHq[�&amp;Q�y�q��YP%�q�
+�uńM��͝��!���i��ʲ"u�W���K�6y!�I�-�C_Ky�
+�����I�+�U���`��(�&lt;�m(Y4�&lt;�8�d�%��&lt;Ny�GUV��&lt;�f�v���&lt;�(!��&lt;��ܙC���ÔΧ�&lt;Wf���-��)q�r'Q��Yʖ`�|�st��]��A����7���D2��kD&gt;,��Q,ΑW&lt;�p��f�N���|a�n��&lt;��m��Yk4���`M���ɛy������o�X�Z�N���aKs�}�x����Oe�Z����˘���-��|��[�/��yP�$@��W�)����Ϋ!M(�*���8?_�"��Uc��,�l�E��@�0�D�01,2�&amp;(�C�" �����v�&gt;c��ǔ������J�y��"���;^`�ԍ�����A5t�4/����`P`�(#M�z���.�q�ß�d�BGq)���%=,�����L	t5��4��l1R� P4��ZDr�]%��"�7�$�gt2Fp?5	�Ue�l��$ 	1�� 6Tʂ|�1�Ǵp���"! 1A0Q@q��?n�!;��*"�pw葪�������Y���w�x��[��hD���&amp;�bvE��[�/,"LBvD�I{ňD�.͔G��X�(b{���oN����П��aau�=rB�(��b�����v�M��"����z&amp;�H����g��'o/�QKf�\&amp;�Yl�o�M�x��u�w�(��1�˲�i%�&lt;ȋ�7�XX��.ȪV����K�%�pLEfw�Dn�
+ŗ��줐�\�й.eS�Y�������bu�Vk6P�
+,e~�|�^i]�\������v��$!1 A"2Q��?��#��d����Y�=�k�W�[�5;�e���KfK(��\L�b0r�xJ=�(��D[jМ���Էb:��:o�MS3�9���c�$n;i����+tt��64�ɎPv��8�S��]zc,I����3�n/I���z3*�����5�w�e�Ǹ�&amp;㹛"J�:E�E3$;�b������,$�n/\�&gt;b�T���]��V��Fe��œ�fZj�Z=���c7�MZ��L���.��5�H�#�~]2�1�tqMSL�1��^`��c�#$�16�b^&lt;.V��Y�M�_��pFI�t�W��^�gq+r �~챴��3��2VCnD-zm�Fu�GMd1!�ġ-pơ�f��Q������%���v=ob�קIc�Oql�{��F�C,���r���[�p"����hc+m��[N�+V6-o_�).�ZV�6!i^�^wf��L�F�~���
+i�������)�3#��	;�nN��r:�N���CU��\�՝���h��-R�2�lM1�b�����Ѕ�b���;�l[�)~���O�K/K�;*�露���K!1A"Qa2q�#BR�� ����3�$0br��	C&amp;4Dc���d����?�c5�&lt;�,��_�����I:�K�No��h[.�ij�.{�����vņ9��+���
+�lϊsw�I�S��/c!�=Y��Ը��x��晭DN�����iE��k��}�8�T��;H�[+���3uQf#��E�7�CKՎ������9k�gf��]Jgy�N�9hcg�v����X��`r�i�cY�gu&lt;1��	D����U�*4�6(���7��ܷU�2��
+ڸ���?sSB�1:^@��ѝjo{��euy]Y?�U���U,��bY;��q�(�����x�N#��+��hҮ� ��#�߈m�8&lt;�w��:��e&lt;�H�#1� V�1���,�jb:�zc�ǽ,���Ig]E�v.��l?���d�{D�&gt;i?�s*U̠V&lt;���rXt��_�\u�qYù%g��N[O.gB�:Z��aS}J��sq����duui�AO$��O��q�ʈ���j�F���$������܂X]��6��yfk���=ea��4�,�P��˝6,-��0$\���pęA�����ib	�R���6�}q���|+Ŕ��a1����Փ������&amp;�ۯ��ee&amp;a��]CSM4�)�p��y#b1�\g|I��LR��A���g�{Xa{Y�f5)G�f��#2GLm�Io��ґV��3x`�o߲�I�6��Z���ʳ����&gt;1�Ǿ��U!��L�V�(жV�{pv`�ѵ\�j4���tǰ���ә\�@E��OU*��\X���qYuT��J.�##�0E�+z(3,�7�����5#7�"3��v� �ǈ(V��8G����Z
+
+x!����v�+I*0k�\��&lt;���h&lt;Q��ULUF�e���LIʻ}�\�����Y�ZpMNW4q�Uh��Q{�,����e�x焸�p�REnNX�6Y;��t&amp;0wS��S�A���&gt;q7�\�(i�R��$���Y$�nHNX��&lt;�4��j����X�
+�'{�̓k��1��yU�4�C�B������t�q�{�歗e���M���J�	%�Z��_��v��O4�w�EQK4z���ʒ���d6ku�Q�Ǵ��eI�er�*��A�����c."�,��Ț�Hj��A��q����c�/���޳���ȫ!�n�xijB���;"�LP�P����b���R�N��f�@pw\�|#+(e �.;W�QPD%����6`��P�ry����ُ�4�Y��W
+�j`ָF-`�B����?��WL�����-��Q{��è�GL'g|[��QT&amp;\�����O:��+x�G?,U�?K��Ԯ_K�Bg�	�$��ZB���/`NVc?���ޢj�б�w/{BE�E-mϙ��Bه�,�-u�Q��F�n&gt;Z�qbmא������^$�3)2���1�}DlY�~���g�p�C��&lt;Y�M\!��I
+��y1�|�0��SVQe��mx\�b�VQӝ��M�w�I�3SE(�X�9
+ŉ%ɵ��Ϧ87+� �����R&amp;��ʔ�I]WIvf�~"2|��Ue�4]�[P��J�TU)*�n����KI��E���,IYѣ9��?�G5 躞X����.�r�׸��aɟ3��5)OH��`P��]}��F��������83���sX���&gt;��� 	e%@ z�{d��+��2��:7I� 7����s�~B�k�z�d�Ľ��ӗ�\A��fuՕ�diwZXTꐄ
+����eE��y�s���v�fU,U\�=�(s\��&amp;�7���J�Y��퐋������TI��!��V��x���]ÏQl{$fuy���	��O$�	�����F���d������j����E�$Z�VM���y#(���Slv��o��˪�Z�]OL��4,�����g�G�۟d݄I[�+Y��T�� 
+`IH���`u3.Ý�1�%S�����'-��%FX(�)T�#Qe&amp;�._&lt;vkKSY�ƩY����7��3|�u���kM��*iRb����nl���y�&lt;Jj�6����o�@�&amp;�4��_����ϫ�)3b7�uv�*�d�r$Z��c�j��'����_u�*"�������\	C�`�OWd��_����ڿ�Wj�C��z��I����h�@m'{��o\ey�S��'Ng�}�U�I
+��&amp;���*ϲ�6�=\�/J�f�1���$ra��ǲQe�]�7{��&gt;�!� �Qt� �,��c�h��x;6��5�:�	�d~L6&gt;�㲪
+�����G�&amp;z�����QHb:�4F�m;�{�r�'��2�����c�cة���{���e�Z���)�\}��� s�{��\��;V�^��l�a��w�wh�^���r�v��/�J� ��0U0��N��l����g�E��q���R{��MݵD�K���E@��"�qGSϓ�LЄE�iO{��������5fg��L��h�R����M����6oCY��ޛH�G=�_B:Ⓘ��{�)mQt�Æ&lt;�����/,e�~�;���5#x��?���eqwe9m �i�f����&gt;)�ᵍ�Q�Xi)c�Б(P+����2���J����H�Ꭺx��af?[_���L���-���yo��pewq���E����{��]�Ù�!���j&gt;��/R)�`Xc�6�ݏ�7'��������dda�E�_KM��&gt;j��)���;�����c�/�*8���t�&amp;i+r��iY�ْ�F'��8�嚺�qr��0��c�nҳl����8��_(��z0��B*���`[��~x�vi��Y��N�l�lKt��;zz��¦i*D��n�Ƒ5�:E�6�X�k�W��/�!Vi"MEF���nd��)&amp;cY���S���#������4��I.�}EM�}1W��P^t��������|P��P�S�\1m���l��4�J��Fܿ��a'y3��4����e��Pk�Y�n���!������y�,q!wc�rq��3�GV���i���oe@J�u�gז;#�����)d�cH����F����r:�]c��#�pT6���������"���53�jMI!³���;+\[}��������X2��$�ɟ2D��,�L��`���.�c�ӆ����S4���	����3N�� 
+n|$����@#��d�l{+�+e�SY:-%&amp;`��F�x���ʎ�0�桫�e����,mɔ��k�
+������i&gt;�Q+�c�|�� ����U�D������I@w������I%1�Z�r-���(�r
+��&amp;젞[��ya�x Y���Y�vR�$/o��1�Y�apl�A}W����Ud���2q��Z������}^U���Z�)i��eҲ0a����ϩ}�$����;�������2����H'-�$��"�X����������ܷ���MWM�Ř�#J_��}0�L��X�t�.�b�c�o��js����E"�+#25�6W��"���Tv��pU=4y�5S�⎎'���}�7��\�=gZ�S�&gt;�C,�B��c9�jܚ%`"1A ���v�E.��M��mg�����ӊۍ{�8�Y��,u-}̩�b~v��V,rǴ�I�&lt;������e�� ld��ב�c�i�t��PQ�r�� � ��,L��$�UZUIs�b�2�J���]Vm6���z��*�HQ��_J�|�����g�Ķ���Pj+�w$����@6��Se�p����{ !+*a���5�z���؇��枣^e�fuJ���M�_v'�6�nY��S�fi�H�-$sɬ�+r���۞��`��d}�prg9d�T$%}��4���ԍ����]�V�g/PA�uI�tX�й��?���n���f(#��r}kԏ"6��� ���S�*	�+�jF��JԐ����6��ǳ�UqM7�MQ9�����$�˧_3�ጋ�r����z8�lJ'��Y���'�8���jc���y"��!׽��h�O�H� �!ܜ��U3d���L�Z+)���O�����$eH˳U$�ز�Wv����p���Mv:&gt;3`Xs�د�#!�۠�&gt;bؖ�� wr�o�o�m��#�\�+-���{8�5'drfQ-]L���p-�R�UP��ץ�#�Գj����$q�	'�&lt;�#˝��,4p�]�$h�dV;�����U�@��/ˈ�A�&gt; +��&lt;{?��vc���9~U��:�p]�#ذ/Ѓv�l7�E{�$񄨣���]nH�0�ǵ/f��g}�����#TvcM'=5�#�b7�cm�����FB�ۭ��Z:Z�X�uN^6/p��N=�8?5�8ҏ9h$�/���Y�X;�!Py���A�&lt;Y�C�ݢF-mlGy%�Xm��T5P Q�5�����ev�Ach�����3�b���h�`rŶ�=����#��r��XVVY{�������~_\v�OI?{ �,��K)fa��§��wMM`�*� ��6�a늊t��:]������bz��=�(�F�ًs ��ǳ��KU]�W�5gL�w��Y�B1=���)��Q���I[��6��0�q�UC(��bGŶ�~��2��Z�^�jJ{�$�F�U?���yl9�vCéKÆ�2F1��D	����~B���\GI�eYDl�jW:���"=�x�����������T�)�gP�@����gռ3��*�A����/!s���vS�|mGGOCE� �U���[�+~d�c�r&lt;���|�.�c��ݍ��_����J&gt;�g:�((厘7�G,��eo+���dK$[I&lt;#��q����4�H��X��o/��q�&lt;m��b$_|�QOZ�m2(6�e���c9̩2��J�ٖbfc�3��8�8����V��XɱT��ש�s��I����Gt��ϐ��34��R�%�Dj���n^���h�M�x��m��XBu�(W�,vF#}���#��6,UY
+���/���M�9�4�wu���j䲶����[	ŕ��]-;�MNX02"x�~|��q�H��2��c���w�0��o��q�v��f��E���~ʚ�X�f�7ǰ���(��5�xT!��H:��&lt;m�$��&lt;��ӆ�G��[EM���GG
+CK�E���n��l�-�Hi�"v��a�*۠c�&lt;v��8��BavU/e�s�Kau�Z�BV?p��g^�+�&gt;�b�S$�d�"��:��V_&amp;RM����l��Kƒ����PC��M%��'b[��g��h�[�=A���;nO_#m��W��t
+�VJw������v����*g��p�KX��Zߦ�̅,�� Rn�7oRz����U��`����OT#[k��j�����Ud:��1a��-�3ngӦ2��Y��Hܤvf�ͣ��E��-f�!�dB7���7	��:Ar.�|�����:�*�v�)i�YK!���8k0�4�i3dWJ�VK�+�����S�`��̲	��T�{�"�ܠ][��/�5�Z����2��J��k}0��ظ@�Y���o?&lt;R�a,!4�H�նߠ�uLB�'��!F��v�t�w�L��iS�����~XY	���B���o�|e�U�,�Y��n|v�.����S�$��s��l�U5w؝��9bh��Ҭ�ǹ&amp;����
+L�\Ak�|�@Z)�C[puu#����e���m.)ƒ�}C�z�&amp;Y��-ߤ,�����I��1�o$�T�b;��鐨դg�y�9�e�ӫ�z	L|�0����X������SSm&amp;hTN�;���zy�TA�Fd�����OO/&lt;f$�ˬ-��o�c�bviScc�u����P��cO����8M2�3(���]!�����S��!Ti5���q&gt;�c�%cT�������K���:�21�����.��X��F��tu���F(�1�{���qX��P�~�Mή�⊞G�G���B�NW������s7���-ǖ=�+%J�ܳ^��.����xrǵG��tM:j��$5
+?v���F3he�Ŵ%��-�6��z�&lt;�:���okb6&amp;�#kO����0T��v�+Ć6&amp;Ť&gt;+��`�������X����b��1��T�TRok���������#�Б��|�\V�H�1K �-u���!�I1'�z7���+���@��̏���J�l���7+�1Ó����A�#��;��+R��Wج��s&lt;���c��4�����V5k���խ˨V���ysǵ��¼w���ש���~"O�,q&lt;U�]��E��zm��:7]C
+܅ԕm�_�Lz�b�~]q��ĕ��-r,C�Y��tح����`��NY��*l[�����0�a��/�����sJR2�Hn��?�L+5�t��܏&lt;1�r�
+.m{6���0k�0b���ߚ���q�e�8&amp;�k�:d�m�����=��R���])ޣ��Tl����|_o���);A��r��_LZ	�ݒ�	�nG�c���مe=-u3�SN���*1���q�Di�97$|G���\����v??\Kh��ױ�qE�a&amp;��v�4�S!K1}
+��j���a�"�!޺��YM�$�ly�`CRQ��_~}/����5n���1�B�!bi��q���e�f��'��K�ԭۻ��.��]lq�s
+iRh�Ɇw��m/��r��~��B��^��@�z$�Q��%E�ж/���{��;�5٭$�V�TҸF{r�,CXm�i�g��˧Ͳ��ʁf*5Dm��y_���z	Q���y�-���4&lt;�|�ycGuPX��?��5�ƖA�1��ru)��w���*�5&lt;�WƠ׹a����I$q��}~c���IT�w
+Z%:5ͺ�&lt;��)��}Q�+Y��T�%Q5�;��l�JY��h�$�*-�k��b���3&gt;&amp;��E,����^��`���q�e�9�[-cMM,�H�V��l�˔ukS�pL�A2.]0��Xߧ�7���.�,�� �����7),oH;�yc&gt;���b���d��[K6��q|Kx�# �f$�;�������g�\��^],@6om����H�P�T��i.y�=��!"V�cc����(P�����1*KIZ�!��ۻ]Ϋ�*�=YDR�Dїr��l=o�,{��v)5Dh�{Ԓ�񩶓������u|{F�UCǜ?%eKuM�[xQ��ɏ,v��-�=LmD�jA-skzd���;�tS�r�c7�S,j�I���ſ;c�ቲ��H�6�{oa{��,2���Hu�o`y\��E�qQ����dV�����o���J�,J��... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<status status="PASS" starttime="20220223 17:20:53.703" endtime="20220223 17:20:54.411"/>
+</kw>
+<kw name="Choose File" library="RPA.Browser.Selenium">
+<arg>imagem</arg>
+<arg>D:\\teste-rpa-robot\\imagem.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220223 17:20:54.414" level="INFO">Sending D:\teste-rpa-robot\imagem.jpg to browser.</msg>
+<status status="PASS" starttime="20220223 17:20:54.412" endtime="20220223 17:20:54.449"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>Cadastrar</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:54.452" level="INFO">Clicking button 'Cadastrar'.</msg>
+<status status="PASS" starttime="20220223 17:20:54.451" endtime="20220223 17:20:54.504"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:20:54.505" endtime="20220223 17:20:54.516"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:54.519" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:54.518" endtime="20220223 17:20:54.550"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:51.762" endtime="20220223 17:20:54.552"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:51.761" endtime="20220223 17:20:54.552"/>
+</iter>
+<iter>
+<var name="${product_sell}">{'Nome': 'Cadeira de praia', 'Preço': 60.0, 'Descrição': 'Dobrável e confortável.', 'Quantidade': 150.0}</var>
+<kw name="Register Product">
+<arg>${product_sell}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:20:55.570" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:20:54.558" endtime="20220223 17:20:55.571"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:55.573" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:55.572" endtime="20220223 17:20:55.623"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>nome</arg>
+<arg>${product_sell}[Nome]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:55.627" level="INFO">Typing text 'Cadeira de praia' into text field 'nome'.</msg>
+<status status="PASS" starttime="20220223 17:20:55.625" endtime="20220223 17:20:55.721"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>price</arg>
+<arg>${product_sell}[Preço]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:55.724" level="INFO">Typing text '60.0' into text field 'price'.</msg>
+<status status="PASS" starttime="20220223 17:20:55.722" endtime="20220223 17:20:55.790"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="descricao"]</arg>
+<arg>${product_sell}[Descrição]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:55.794" level="INFO">Typing text 'Dobrável e confortável.' into text field 'css=[data-testid="descricao"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:55.791" endtime="20220223 17:20:55.887"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>quantity</arg>
+<arg>${product_sell}[Quantidade]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:55.890" level="INFO">Typing text '150.0' into text field 'quantity'.</msg>
+<status status="PASS" starttime="20220223 17:20:55.888" endtime="20220223 17:20:55.960"/>
+</kw>
+<kw name="Http Get" library="RPA.HTTP">
+<arg>https://api.thecatapi.com/v1/images/search</arg>
+<arg>overwrite=True</arg>
+<doc>A helper method for ``Get Request`` that will create a session, perform GET
+request, and store the target file, if set by the ``target_file`` parameter.</doc>
+<msg timestamp="20220223 17:20:55.964" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:20:56.162" level="INFO">GET Request : url=https://api.thecatapi.com/v1/images/search 
+ path_url=/v1/images/search 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:20:56.163" level="INFO">GET Response : url=https://api.thecatapi.com/v1/images/search 
+ status=200, reason=OK 
+ headers={'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'vary': 'Origin', 'expires': 'Tue, 03 Jul 2001 06:00:00 GMT', 'last-modified': 'Wed Feb 23 2022 20:20:56 GMT+0000 (Coordinated Universal Time)', 'cache-control': 'post-check=0, pre-check=0', 'content-type': 'application/json; charset=utf-8', 'x-response-time': '1ms', 'X-Cloud-Trace-Context': '3c6f9a027248688160ac4390f6ab5524', 'Date': 'Wed, 23 Feb 2022 20:20:56 GMT', 'Server': 'Google Frontend', 'Content-Length': '101'} 
+ body=[{"breeds":[],"id":"a4q","url":"https://cdn2.thecatapi.com/images/a4q.jpg","width":500,"height":331}] 
+ </msg>
+<status status="PASS" starttime="20220223 17:20:55.961" endtime="20220223 17:20:56.164"/>
+</kw>
+<kw name="Download" library="RPA.HTTP">
+<arg>https://cdn2.thecatapi.com/images/ebv.jpg</arg>
+<arg>${OUTPUT_DIR}${/}imagem.jpg</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<msg timestamp="20220223 17:20:56.169" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:20:56.224" level="INFO">GET Request : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ path_url=/images/ebv.jpg 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:20:56.824" level="INFO">GET Response : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 23 Feb 2022 20:20:56 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '28025', 'Connection': 'keep-alive', 'last-modified': 'Thu, 27 Sep 2018 01:09:17 GMT', 'etag': '"236b60fbfb5cde085186493609f37579"', 'x-cache': 'RefreshHit from cloudfront', 'via': '1.1 851117d0ba7b2cbe0cf02406c40397d8.cloudfront.net (CloudFront)', 'x-amz-cf-pop': 'GIG51-C2', 'x-amz-cf-id': 'mN-pc-ggotwdc2OuU_yshN2m1EOWWD5Ci6xv-vhvEZuVx8g6YtwhYw==', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '50', 'Accept-Ranges': 'bytes', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2F8SL8AkicAOi%2FwblN2sCU98qlkinYXQzaK47Z31ZInXMrLZNTu1ClxjpvehjaOdMYvXz9GmiSXCsBRTmNRXORrZmghh5uz5FsjHqd%2B5fcNR3ZNvXJmxFogaR3w2VPZBghOy78LxgLlD1u7fKlrKSABo%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6e23285f4b6162a1-BSB', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=����JFIF��C		��C
+
+���"������ߥS=��*��e$�$����=��,�:넒��H@;;��i�c�m.8C}tD�A��S����o|��nY�Ц&gt;�k��+�M�7^#��+�y�|a����P��t˰��)?(,f߻�����.��O�=B�y�sW��b��/V̘Yw���Vo�U�Mz,�M-ǟ��U�Ď_a@��7����; ���Cm�}/����9�S2����Ηf�u3���b��S�ރr����R^պ�c�Hh��"Y�Z�4���o�%I\�*6��z?�\�i��ԢD@���i����Z����k�H�}/5��5�1����#f�t�L:Ҹ�sg�Ѱ�T�B��G������]h޷�m�&lt;�C8��U�V?`�IX�BI��W��qj3SQ�FM�2F����Ұ�U���e$�I!$����(���N�͆���dUf�+�xT�����$�I!$��HY�%��$�&lt;����;�cΈ������%����BI	$,Λ#5V!�%���d1�-F�f٪~`ۛ�F��IX�BK�0�����O�&lt;�Y}m	�TԳT2m�SfA`rhn&gt;*פ�$�E�&gt;Z@�$ݜc�2��{�=Ii��U&gt;6��\�pvpۯI^I$7�7�s43�j��lD3��o�[nVe}yQL�x�^�h kf���H��X	����b���&amp;f����pAK#��&lt;�6������פ�4�"�M�y��'�=7�ƭd.[7FU��؎�d3��U���D[�����qk)h��"�=&gt;�=!o�NV2�#b��.�FI9��K_Hh��3�@+d]@����k������zJI�f���6Ih�!B�-�s�s�����א0�ĕ��.\���҄H�M�
+x�Ϋ&amp;�TOc�B u��z����$����%�h�c�(�׹��.���B9�L�%kUzĂ����a��\�N�F��g޸�q޷�z�3���XbΜ
+�V�qܽ�IJ��S��Ϋ����f�a���`lіrg/�BKr������0r$� J��P��׊��[ZCa%�m&lt;5p�8_MFIy=I�Dnx�gR����Խ4�i@�,sW�+:V_�$w��?K;���ޓ^sT�ݝK47�Y�X���M�:%��i\�ޜI��⃜����Z1������^ƕ��`�&lt;�Wچ�m t�y�=�9%�2�Ƌ��B��VK^�����&lt;bpy�F;�$07
+�e8�'R�qr�%{UnP��ŗSlrBq쐑�4�G�.§��*E���X!�+g�P�+l�dM����Z�$bIcD���"�2�U�s�Z�!9u��Y���oPHq[�&amp;Q�y�q��YP%�q�
+�uńM��͝��!���i��ʲ"u�W���K�6y!�I�-�C_Ky�
+�����I�+�U���`��(�&lt;�m(Y4�&lt;�8�d�%��&lt;Ny�GUV��&lt;�f�v���&lt;�(!��&lt;��ܙC���ÔΧ�&lt;Wf���-��)q�r'Q��Yʖ`�|�st��]��A����7���D2��kD&gt;,��Q,ΑW&lt;�p��f�N���|a�n��&lt;��m��Yk4���`M���ɛy������o�X�Z�N���aKs�}�x����Oe�Z����˘���-��|��[�/��yP�$@��W�)����Ϋ!M(�*���8?_�"��Uc��,�l�E��@�0�D�01,2�&amp;(�C�" �����v�&gt;c��ǔ������J�y��"���;^`�ԍ�����A5t�4/����`P`�(#M�z���.�q�ß�d�BGq)���%=,�����L	t5��4��l1R� P4��ZDr�]%��"�7�$�gt2Fp?5	�Ue�l��$ 	1�� 6Tʂ|�1�Ǵp���"! 1A0Q@q��?n�!;��*"�pw葪�������Y���w�x��[��hD���&amp;�bvE��[�/,"LBvD�I{ňD�.͔G��X�(b{���oN����П��aau�=rB�(��b�����v�M��"����z&amp;�H����g��'o/�QKf�\&amp;�Yl�o�M�x��u�w�(��1�˲�i%�&lt;ȋ�7�XX��.ȪV����K�%�pLEfw�Dn�
+ŗ��줐�\�й.eS�Y�������bu�Vk6P�
+,e~�|�^i]�\������v��$!1 A"2Q��?��#��d����Y�=�k�W�[�5;�e���KfK(��\L�b0r�xJ=�(��D[jМ���Էb:��:o�MS3�9���c�$n;i����+tt��64�ɎPv��8�S��]zc,I����3�n/I���z3*�����5�w�e�Ǹ�&amp;㹛"J�:E�E3$;�b������,$�n/\�&gt;b�T���]��V��Fe��œ�fZj�Z=���c7�MZ��L���.��5�H�#�~]2�1�tqMSL�1��^`��c�#$�16�b^&lt;.V��Y�M�_��pFI�t�W��^�gq+r �~챴��3��2VCnD-zm�Fu�GMd1!�ġ-pơ�f��Q������%���v=ob�קIc�Oql�{��F�C,���r���[�p"����hc+m��[N�+V6-o_�).�ZV�6!i^�^wf��L�F�~���
+i�������)�3#��	;�nN��r:�N���CU��\�՝���h��-R�2�lM1�b�����Ѕ�b���;�l[�)~���O�K/K�;*�露���K!1A"Qa2q�#BR�� ����3�$0br��	C&amp;4Dc���d����?�c5�&lt;�,��_�����I:�K�No��h[.�ij�.{�����vņ9��+���
+�lϊsw�I�S��/c!�=Y��Ը��x��晭DN�����iE��k��}�8�T��;H�[+���3uQf#��E�7�CKՎ������9k�gf��]Jgy�N�9hcg�v����X��`r�i�cY�gu&lt;1��	D����U�*4�6(���7��ܷU�2��
+ڸ���?sSB�1:^@��ѝjo{��euy]Y?�U���U,��bY;��q�(�����x�N#��+��hҮ� ��#�߈m�8&lt;�w��:��e&lt;�H�#1� V�1���,�jb:�zc�ǽ,���Ig]E�v.��l?���d�{D�&gt;i?�s*U̠V&lt;���rXt��_�\u�qYù%g��N[O.gB�:Z��aS}J��sq����duui�AO$��O��q�ʈ���j�F���$������܂X]��6��yfk���=ea��4�,�P��˝6,-��0$\���pęA�����ib	�R���6�}q���|+Ŕ��a1����Փ������&amp;�ۯ��ee&amp;a��]CSM4�)�p��y#b1�\g|I��LR��A���g�{Xa{Y�f5)G�f��#2GLm�Io��ґV��3x`�o߲�I�6��Z���ʳ����&gt;1�Ǿ��U!��L�V�(жV�{pv`�ѵ\�j4���tǰ���ә\�@E��OU*��\X���qYuT��J.�##�0E�+z(3,�7�����5#7�"3��v� �ǈ(V��8G����Z
+
+x!����v�+I*0k�\��&lt;���h&lt;Q��ULUF�e���LIʻ}�\�����Y�ZpMNW4q�Uh��Q{�,����e�x焸�p�REnNX�6Y;��t&amp;0wS��S�A���&gt;q7�\�(i�R��$���Y$�nHNX��&lt;�4��j����X�
+�'{�̓k��1��yU�4�C�B������t�q�{�歗e���M���J�	%�Z��_��v��O4�w�EQK4z���ʒ���d6ku�Q�Ǵ��eI�er�*��A�����c."�,��Ț�Hj��A��q����c�/���޳���ȫ!�n�xijB���;"�LP�P����b���R�N��f�@pw\�|#+(e �.;W�QPD%����6`��P�ry����ُ�4�Y��W
+�j`ָF-`�B����?��WL�����-��Q{��è�GL'g|[��QT&amp;\�����O:��+x�G?,U�?K��Ԯ_K�Bg�	�$��ZB���/`NVc?���ޢj�б�w/{BE�E-mϙ��Bه�,�-u�Q��F�n&gt;Z�qbmא������^$�3)2���1�}DlY�~���g�p�C��&lt;Y�M\!��I
+��y1�|�0��SVQe��mx\�b�VQӝ��M�w�I�3SE(�X�9
+ŉ%ɵ��Ϧ87+� �����R&amp;��ʔ�I]WIvf�~"2|��Ue�4]�[P��J�TU)*�n����KI��E���,IYѣ9��?�G5 躞X����.�r�׸��aɟ3��5)OH��`P��]}��F��������83���sX���&gt;��� 	e%@ z�{d��+��2��:7I� 7����s�~B�k�z�d�Ľ��ӗ�\A��fuՕ�diwZXTꐄ
+����eE��y�s���v�fU,U\�=�(s\��&amp;�7���J�Y��퐋������TI��!��V��x���]ÏQl{$fuy���	��O$�	�����F���d������j����E�$Z�VM���y#(���Slv��o��˪�Z�]OL��4,�����g�G�۟d݄I[�+Y��T�� 
+`IH���`u3.Ý�1�%S�����'-��%FX(�)T�#Qe&amp;�._&lt;vkKSY�ƩY����7��3|�u���kM��*iRb����nl���y�&lt;Jj�6����o�@�&amp;�4��_����ϫ�)3b7�uv�*�d�r$Z��c�j��'����_u�*"�������\	C�`�OWd��_����ڿ�Wj�C��z��I����h�@m'{��o\ey�S��'Ng�}�U�I
+��&amp;���*ϲ�6�=\�/J�f�1���$ra��ǲQe�]�7{��&gt;�!� �Qt� �,��c�h��x;6��5�:�	�d~L6&gt;�㲪
+�����G�&amp;z�����QHb:�4F�m;�{�r�'��2�����c�cة���{���e�Z���)�\}��� s�{��\��;V�^��l�a��w�wh�^���r�v��/�J� ��0U0��N��l����g�E��q���R{��MݵD�K���E@��"�qGSϓ�LЄE�iO{��������5fg��L��h�R����M����6oCY��ޛH�G=�_B:Ⓘ��{�)mQt�Æ&lt;�����/,e�~�;���5#x��?���eqwe9m �i�f����&gt;)�ᵍ�Q�Xi)c�Б(P+����2���J����H�Ꭺx��af?[_���L���-���yo��pewq���E����{��]�Ù�!���j&gt;��/R)�`Xc�6�ݏ�7'��������dda�E�_KM��&gt;j��)���;�����c�/�*8���t�&amp;i+r��iY�ْ�F'��8�嚺�qr��0��c�nҳl����8��_(��z0��B*���`[��~x�vi��Y��N�l�lKt��;zz��¦i*D��n�Ƒ5�:E�6�X�k�W��/�!Vi"MEF���nd��)&amp;cY���S���#������4��I.�}EM�}1W��P^t��������|P��P�S�\1m���l��4�J��Fܿ��a'y3��4����e��Pk�Y�n���!������y�,q!wc�rq��3�GV���i���oe@J�u�gז;#�����)d�cH����F����r:�]c��#�pT6���������"���53�jMI!³���;+\[}��������X2��$�ɟ2D��,�L��`���.�c�ӆ����S4���	����3N�� 
+n|$����@#��d�l{+�+e�SY:-%&amp;`��F�x���ʎ�0�桫�e����,mɔ��k�
+������i&gt;�Q+�c�|�� ����U�D������I@w������I%1�Z�r-���(�r
+��&amp;젞[��ya�x Y���Y�vR�$/o��1�Y�apl�A}W����Ud���2q��Z������}^U���Z�)i��eҲ0a����ϩ}�$����;�������2����H'-�$��"�X����������ܷ���MWM�Ř�#J_��}0�L��X�t�.�b�c�o��js����E"�+#25�6W��"���Tv��pU=4y�5S�⎎'���}�7��\�=gZ�S�&gt;�C,�B��c9�jܚ%`"1A ���v�E.��M��mg�����ӊۍ{�8�Y��,u-}̩�b~v��V,rǴ�I�&lt;������e�� ld��ב�c�i�t��PQ�r�� � ��,L��$�UZUIs�b�2�J���]Vm6���z��*�HQ��_J�|�����g�Ķ���Pj+�w$����@6��Se�p����{ !+*a���5�z���؇��枣^e�fuJ���M�_v'�6�nY��S�fi�H�-$sɬ�+r���۞��`��d}�prg9d�T$%}��4���ԍ����]�V�g/PA�uI�tX�й��?���n���f(#��r}kԏ"6��� ���S�*	�+�jF��JԐ����6��ǳ�UqM7�MQ9�����$�˧_3�ጋ�r����z8�lJ'��Y���'�8���jc���y"��!׽��h�O�H� �!ܜ��U3d���L�Z+)���O�����$eH˳U$�ز�Wv����p���Mv:&gt;3`Xs�د�#!�۠�&gt;bؖ�� wr�o�o�m��#�\�+-���{8�5'drfQ-]L���p-�R�UP��ץ�#�Գj����$q�	'�&lt;�#˝��,4p�]�$h�dV;�����U�@��/ˈ�A�&gt; +��&lt;{?��vc���9~U��:�p]�#ذ/Ѓv�l7�E{�$񄨣���]nH�0�ǵ/f��g}�����#TvcM'=5�#�b7�cm�����FB�ۭ��Z:Z�X�uN^6/p��N=�8?5�8ҏ9h$�/���Y�X;�!Py���A�&lt;Y�C�ݢF-mlGy%�Xm��T5P Q�5�����ev�Ach�����3�b���h�`rŶ�=����#��r��XVVY{�������~_\v�OI?{ �,��K)fa��§��wMM`�*� ��6�a늊t��:]������bz��=�(�F�ًs ��ǳ��KU]�W�5gL�w��Y�B1=���)��Q���I[��6��0�q�UC(��bGŶ�~��2��Z�^�jJ{�$�F�U?���yl9�vCéKÆ�2F1��D	����~B���\GI�eYDl�jW:���"=�x�����������T�)�gP�@����gռ3��*�A����/!s���vS�|mGGOCE� �U���[�+~d�c�r&lt;���|�.�c��ݍ��_����J&gt;�g:�((厘7�G,��eo+���dK$[I&lt;#��q����4�H��X��o/��q�&lt;m��b$_|�QOZ�m2(6�e���c9̩2��J�ٖbfc�3��8�8����V��XɱT��ש�s��I����Gt��ϐ��34��R�%�Dj���n^���h�M�x��m��XBu�(W�,vF#}���#��6,UY
+���/���M�9�4�wu���j䲶����[	ŕ��]-;�MNX02"x�~|��q�H��2��c���w�0��o��q�v��f��E���~ʚ�X�f�7ǰ���(��5�xT!��H:��&lt;m�$��&lt;��ӆ�G��[EM���GG
+CK�E���n��l�-�Hi�"v��a�*۠c�&lt;v��8��BavU/e�s�Kau�Z�BV?p��g^�+�&gt;�b�S$�d�"��:��V_&amp;RM����l��Kƒ����PC��M%��'b[��g��h�[�=A���;nO_#m��W��t
+�VJw������v����*g��p�KX��Zߦ�̅,�� Rn�7oRz����U��`����OT#[k��j�����Ud:��1a��-�3ngӦ2��Y��Hܤvf�ͣ��E��-f�!�dB7���7	��:Ar.�|�����:�*�v�)i�YK!���8k0�4�i3dWJ�VK�+�����S�`��̲	��T�{�"�ܠ][��/�5�Z����2��J��k}0��ظ@�Y���o?&lt;R�a,!4�H�նߠ�uLB�'��!F��v�t�w�L��iS�����~XY	���B���o�|e�U�,�Y��n|v�.����S�$��s��l�U5w؝��9bh��Ҭ�ǹ&amp;����
+L�\Ak�|�@Z)�C[puu#����e���m.)ƒ�}C�z�&amp;Y��-ߤ,�����I��1�o$�T�b;��鐨դg�y�9�e�ӫ�z	L|�0����X������SSm&amp;hTN�;���zy�TA�Fd�����OO/&lt;f$�ˬ-��o�c�bviScc�u����P��cO����8M2�3(���]!�����S��!Ti5���q&gt;�c�%cT�������K���:�21�����.��X��F��tu���F(�1�{���qX��P�~�Mή�⊞G�G���B�NW������s7���-ǖ=�+%J�ܳ^��.����xrǵG��tM:j��$5
+?v���F3he�Ŵ%��-�6��z�&lt;�:���okb6&amp;�#kO����0T��v�+Ć6&amp;Ť&gt;+��`�������X����b��1��T�TRok���������#�Б��|�\V�H�1K �-u���!�I1'�z7���+���@��̏���J�l���7+�1Ó����A�#��;��+R��Wج��s&lt;���c��4�����V5k���խ˨V���ysǵ��¼w���ש���~"O�,q&lt;U�]��E��zm��:7]C
+܅ԕm�_�Lz�b�~]q��ĕ��-r,C�Y��tح����`��NY��*l[�����0�a��/�����sJR2�Hn��?�L+5�t��܏&lt;1�r�
+.m{6���0k�0b���ߚ���q�e�8&amp;�k�:d�m�����=��R���])ޣ��Tl����|_o���);A��r��_LZ	�ݒ�	�nG�c���مe=-u3�SN���*1���q�Di�97$|G���\����v??\Kh��ױ�qE�a&amp;��v�4�S!K1}
+��j���a�"�!޺��YM�$�ly�`CRQ��_~}/����5n���1�B�!bi��q���e�f��'��K�ԭۻ��.��]lq�s
+iRh�Ɇw��m/��r��~��B��^��@�z$�Q��%E�ж/���{��;�5٭$�V�TҸF{r�,CXm�i�g��˧Ͳ��ʁf*5Dm��y_���z	Q���y�-���4&lt;�|�ycGuPX��?��5�ƖA�1��ru)��w���*�5&lt;�WƠ׹a����I$q��}~c���IT�w
+Z%:5ͺ�&lt;��)��}Q�+Y��T�%Q5�;��l�JY��h�$�*-�k��b���3&gt;&amp;��E,����^��`���q�e�9�[-cMM,�H�V��l�˔ukS�pL�A2.]0��Xߧ�7���.�,�� �����7),oH;�yc&gt;���b���d��[K6��q|Kx�# �f$�;�������g�\��^],@6om����H�P�T��i.y�=��!"V�cc����(P�����1*KIZ�!��ۻ]Ϋ�*�=YDR�Dїr��l=o�,{��v)5Dh�{Ԓ�񩶓������u|{F�UCǜ?%eKuM�[xQ��ɏ,v��-�=LmD�jA-skzd���;�tS�r�c7�S,j�I���ſ;c�ቲ��H�6�{oa{��,2���Hu�o`y\��E�qQ����dV�����o���J�,J��... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<status status="PASS" starttime="20220223 17:20:56.166" endtime="20220223 17:20:56.827"/>
+</kw>
+<kw name="Choose File" library="RPA.Browser.Selenium">
+<arg>imagem</arg>
+<arg>D:\\teste-rpa-robot\\imagem.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220223 17:20:56.830" level="INFO">Sending D:\teste-rpa-robot\imagem.jpg to browser.</msg>
+<status status="PASS" starttime="20220223 17:20:56.828" endtime="20220223 17:20:56.860"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>Cadastrar</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:56.862" level="INFO">Clicking button 'Cadastrar'.</msg>
+<status status="PASS" starttime="20220223 17:20:56.861" endtime="20220223 17:20:56.907"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:20:56.908" endtime="20220223 17:20:56.918"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:56.921" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:56.919" endtime="20220223 17:20:56.960"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:54.555" endtime="20220223 17:20:56.962"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:54.554" endtime="20220223 17:20:56.963"/>
+</iter>
+<iter>
+<var name="${product_sell}">{'Nome': 'Aspirador de pó', 'Preço': 300.0, 'Descrição': 'Aspira e varre.', 'Quantidade': 65.0}</var>
+<kw name="Register Product">
+<arg>${product_sell}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:20:57.985" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:20:56.968" endtime="20220223 17:20:57.985"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:57.988" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:57.987" endtime="20220223 17:20:58.034"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>nome</arg>
+<arg>${product_sell}[Nome]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:58.038" level="INFO">Typing text 'Aspirador de pó' into text field 'nome'.</msg>
+<status status="PASS" starttime="20220223 17:20:58.036" endtime="20220223 17:20:58.123"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>price</arg>
+<arg>${product_sell}[Preço]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:58.126" level="INFO">Typing text '300.0' into text field 'price'.</msg>
+<status status="PASS" starttime="20220223 17:20:58.124" endtime="20220223 17:20:58.190"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="descricao"]</arg>
+<arg>${product_sell}[Descrição]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:58.194" level="INFO">Typing text 'Aspira e varre.' into text field 'css=[data-testid="descricao"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:58.192" endtime="20220223 17:20:58.268"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>quantity</arg>
+<arg>${product_sell}[Quantidade]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:58.272" level="INFO">Typing text '65.0' into text field 'quantity'.</msg>
+<status status="PASS" starttime="20220223 17:20:58.270" endtime="20220223 17:20:58.342"/>
+</kw>
+<kw name="Http Get" library="RPA.HTTP">
+<arg>https://api.thecatapi.com/v1/images/search</arg>
+<arg>overwrite=True</arg>
+<doc>A helper method for ``Get Request`` that will create a session, perform GET
+request, and store the target file, if set by the ``target_file`` parameter.</doc>
+<msg timestamp="20220223 17:20:58.345" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:20:58.608" level="INFO">GET Request : url=https://api.thecatapi.com/v1/images/search 
+ path_url=/v1/images/search 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:20:58.609" level="INFO">GET Response : url=https://api.thecatapi.com/v1/images/search 
+ status=200, reason=OK 
+ headers={'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'vary': 'Origin', 'expires': 'Tue, 03 Jul 2001 06:00:00 GMT', 'last-modified': 'Wed Feb 23 2022 20:20:59 GMT+0000 (Coordinated Universal Time)', 'cache-control': 'post-check=0, pre-check=0', 'content-type': 'application/json; charset=utf-8', 'x-response-time': '68ms', 'X-Cloud-Trace-Context': 'd5163abc46770671d4f406039a3dc24a', 'Date': 'Wed, 23 Feb 2022 20:20:59 GMT', 'Server': 'Google Frontend', 'Content-Length': '101'} 
+ body=[{"breeds":[],"id":"7of","url":"https://cdn2.thecatapi.com/images/7of.jpg","width":800,"height":600}] 
+ </msg>
+<status status="PASS" starttime="20220223 17:20:58.343" endtime="20220223 17:20:58.609"/>
+</kw>
+<kw name="Download" library="RPA.HTTP">
+<arg>https://cdn2.thecatapi.com/images/ebv.jpg</arg>
+<arg>${OUTPUT_DIR}${/}imagem.jpg</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<msg timestamp="20220223 17:20:58.613" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:20:58.680" level="INFO">GET Request : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ path_url=/images/ebv.jpg 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:20:59.280" level="INFO">GET Response : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 23 Feb 2022 20:20:59 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '28025', 'Connection': 'keep-alive', 'last-modified': 'Thu, 27 Sep 2018 01:09:17 GMT', 'etag': '"236b60fbfb5cde085186493609f37579"', 'x-cache': 'RefreshHit from cloudfront', 'via': '1.1 851117d0ba7b2cbe0cf02406c40397d8.cloudfront.net (CloudFront)', 'x-amz-cf-pop': 'GIG51-C2', 'x-amz-cf-id': 'mN-pc-ggotwdc2OuU_yshN2m1EOWWD5Ci6xv-vhvEZuVx8g6YtwhYw==', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '53', 'Accept-Ranges': 'bytes', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=dYS0F4Us5OxlUPHqlNf0r4TJq7VmGu3nf%2F0S5JiSMCU0QCiHIuciuI0J85e%2BLk25%2B4tM5P1cQ0nCiJ%2FCQgw3m7SJ1xl4MChyOkgKzcbk7D%2FPySU6PjoiLRwvfm1VSA%2BLbZhv%2F9lt%2Bbf%2F1SDuKBzXrnE%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6e23286e89d862a1-BSB', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=����JFIF��C		��C
+
+���"������ߥS=��*��e$�$����=��,�:넒��H@;;��i�c�m.8C}tD�A��S����o|��nY�Ц&gt;�k��+�M�7^#��+�y�|a����P��t˰��)?(,f߻�����.��O�=B�y�sW��b��/V̘Yw���Vo�U�Mz,�M-ǟ��U�Ď_a@��7����; ���Cm�}/����9�S2����Ηf�u3���b��S�ރr����R^պ�c�Hh��"Y�Z�4���o�%I\�*6��z?�\�i��ԢD@���i����Z����k�H�}/5��5�1����#f�t�L:Ҹ�sg�Ѱ�T�B��G������]h޷�m�&lt;�C8��U�V?`�IX�BI��W��qj3SQ�FM�2F����Ұ�U���e$�I!$����(���N�͆���dUf�+�xT�����$�I!$��HY�%��$�&lt;����;�cΈ������%����BI	$,Λ#5V!�%���d1�-F�f٪~`ۛ�F��IX�BK�0�����O�&lt;�Y}m	�TԳT2m�SfA`rhn&gt;*פ�$�E�&gt;Z@�$ݜc�2��{�=Ii��U&gt;6��\�pvpۯI^I$7�7�s43�j��lD3��o�[nVe}yQL�x�^�h kf���H��X	����b���&amp;f����pAK#��&lt;�6������פ�4�"�M�y��'�=7�ƭd.[7FU��؎�d3��U���D[�����qk)h��"�=&gt;�=!o�NV2�#b��.�FI9��K_Hh��3�@+d]@����k������zJI�f���6Ih�!B�-�s�s�����א0�ĕ��.\���҄H�M�
+x�Ϋ&amp;�TOc�B u��z����$����%�h�c�(�׹��.���B9�L�%kUzĂ����a��\�N�F��g޸�q޷�z�3���XbΜ
+�V�qܽ�IJ��S��Ϋ����f�a���`lіrg/�BKr������0r$� J��P��׊��[ZCa%�m&lt;5p�8_MFIy=I�Dnx�gR����Խ4�i@�,sW�+:V_�$w��?K;���ޓ^sT�ݝK47�Y�X���M�:%��i\�ޜI��⃜����Z1������^ƕ��`�&lt;�Wچ�m t�y�=�9%�2�Ƌ��B��VK^�����&lt;bpy�F;�$07
+�e8�'R�qr�%{UnP��ŗSlrBq쐑�4�G�.§��*E���X!�+g�P�+l�dM����Z�$bIcD���"�2�U�s�Z�!9u��Y���oPHq[�&amp;Q�y�q��YP%�q�
+�uńM��͝��!���i��ʲ"u�W���K�6y!�I�-�C_Ky�
+�����I�+�U���`��(�&lt;�m(Y4�&lt;�8�d�%��&lt;Ny�GUV��&lt;�f�v���&lt;�(!��&lt;��ܙC���ÔΧ�&lt;Wf���-��)q�r'Q��Yʖ`�|�st��]��A����7���D2��kD&gt;,��Q,ΑW&lt;�p��f�N���|a�n��&lt;��m��Yk4���`M���ɛy������o�X�Z�N���aKs�}�x����Oe�Z����˘���-��|��[�/��yP�$@��W�)����Ϋ!M(�*���8?_�"��Uc��,�l�E��@�0�D�01,2�&amp;(�C�" �����v�&gt;c��ǔ������J�y��"���;^`�ԍ�����A5t�4/����`P`�(#M�z���.�q�ß�d�BGq)���%=,�����L	t5��4��l1R� P4��ZDr�]%��"�7�$�gt2Fp?5	�Ue�l��$ 	1�� 6Tʂ|�1�Ǵp���"! 1A0Q@q��?n�!;��*"�pw葪�������Y���w�x��[��hD���&amp;�bvE��[�/,"LBvD�I{ňD�.͔G��X�(b{���oN����П��aau�=rB�(��b�����v�M��"����z&amp;�H����g��'o/�QKf�\&amp;�Yl�o�M�x��u�w�(��1�˲�i%�&lt;ȋ�7�XX��.ȪV����K�%�pLEfw�Dn�
+ŗ��줐�\�й.eS�Y�������bu�Vk6P�
+,e~�|�^i]�\������v��$!1 A"2Q��?��#��d����Y�=�k�W�[�5;�e���KfK(��\L�b0r�xJ=�(��D[jМ���Էb:��:o�MS3�9���c�$n;i����+tt��64�ɎPv��8�S��]zc,I����3�n/I���z3*�����5�w�e�Ǹ�&amp;㹛"J�:E�E3$;�b������,$�n/\�&gt;b�T���]��V��Fe��œ�fZj�Z=���c7�MZ��L���.��5�H�#�~]2�1�tqMSL�1��^`��c�#$�16�b^&lt;.V��Y�M�_��pFI�t�W��^�gq+r �~챴��3��2VCnD-zm�Fu�GMd1!�ġ-pơ�f��Q������%���v=ob�קIc�Oql�{��F�C,���r���[�p"����hc+m��[N�+V6-o_�).�ZV�6!i^�^wf��L�F�~���
+i�������)�3#��	;�nN��r:�N���CU��\�՝���h��-R�2�lM1�b�����Ѕ�b���;�l[�)~���O�K/K�;*�露���K!1A"Qa2q�#BR�� ����3�$0br��	C&amp;4Dc���d����?�c5�&lt;�,��_�����I:�K�No��h[.�ij�.{�����vņ9��+���
+�lϊsw�I�S��/c!�=Y��Ը��x��晭DN�����iE��k��}�8�T��;H�[+���3uQf#��E�7�CKՎ������9k�gf��]Jgy�N�9hcg�v����X��`r�i�cY�gu&lt;1��	D����U�*4�6(���7��ܷU�2��
+ڸ���?sSB�1:^@��ѝjo{��euy]Y?�U���U,��bY;��q�(�����x�N#��+��hҮ� ��#�߈m�8&lt;�w��:��e&lt;�H�#1� V�1���,�jb:�zc�ǽ,���Ig]E�v.��l?���d�{D�&gt;i?�s*U̠V&lt;���rXt��_�\u�qYù%g��N[O.gB�:Z��aS}J��sq����duui�AO$��O��q�ʈ���j�F���$������܂X]��6��yfk���=ea��4�,�P��˝6,-��0$\���pęA�����ib	�R���6�}q���|+Ŕ��a1����Փ������&amp;�ۯ��ee&amp;a��]CSM4�)�p��y#b1�\g|I��LR��A���g�{Xa{Y�f5)G�f��#2GLm�Io��ґV��3x`�o߲�I�6��Z���ʳ����&gt;1�Ǿ��U!��L�V�(жV�{pv`�ѵ\�j4���tǰ���ә\�@E��OU*��\X���qYuT��J.�##�0E�+z(3,�7�����5#7�"3��v� �ǈ(V��8G����Z
+
+x!����v�+I*0k�\��&lt;���h&lt;Q��ULUF�e���LIʻ}�\�����Y�ZpMNW4q�Uh��Q{�,����e�x焸�p�REnNX�6Y;��t&amp;0wS��S�A���&gt;q7�\�(i�R��$���Y$�nHNX��&lt;�4��j����X�
+�'{�̓k��1��yU�4�C�B������t�q�{�歗e���M���J�	%�Z��_��v��O4�w�EQK4z���ʒ���d6ku�Q�Ǵ��eI�er�*��A�����c."�,��Ț�Hj��A��q����c�/���޳���ȫ!�n�xijB���;"�LP�P����b���R�N��f�@pw\�|#+(e �.;W�QPD%����6`��P�ry����ُ�4�Y��W
+�j`ָF-`�B����?��WL�����-��Q{��è�GL'g|[��QT&amp;\�����O:��+x�G?,U�?K��Ԯ_K�Bg�	�$��ZB���/`NVc?���ޢj�б�w/{BE�E-mϙ��Bه�,�-u�Q��F�n&gt;Z�qbmא������^$�3)2���1�}DlY�~���g�p�C��&lt;Y�M\!��I
+��y1�|�0��SVQe��mx\�b�VQӝ��M�w�I�3SE(�X�9
+ŉ%ɵ��Ϧ87+� �����R&amp;��ʔ�I]WIvf�~"2|��Ue�4]�[P��J�TU)*�n����KI��E���,IYѣ9��?�G5 躞X����.�r�׸��aɟ3��5)OH��`P��]}��F��������83���sX���&gt;��� 	e%@ z�{d��+��2��:7I� 7����s�~B�k�z�d�Ľ��ӗ�\A��fuՕ�diwZXTꐄ
+����eE��y�s���v�fU,U\�=�(s\��&amp;�7���J�Y��퐋������TI��!��V��x���]ÏQl{$fuy���	��O$�	�����F���d������j����E�$Z�VM���y#(���Slv��o��˪�Z�]OL��4,�����g�G�۟d݄I[�+Y��T�� 
+`IH���`u3.Ý�1�%S�����'-��%FX(�)T�#Qe&amp;�._&lt;vkKSY�ƩY����7��3|�u���kM��*iRb����nl���y�&lt;Jj�6����o�@�&amp;�4��_����ϫ�)3b7�uv�*�d�r$Z��c�j��'����_u�*"�������\	C�`�OWd��_����ڿ�Wj�C��z��I����h�@m'{��o\ey�S��'Ng�}�U�I
+��&amp;���*ϲ�6�=\�/J�f�1���$ra��ǲQe�]�7{��&gt;�!� �Qt� �,��c�h��x;6��5�:�	�d~L6&gt;�㲪
+�����G�&amp;z�����QHb:�4F�m;�{�r�'��2�����c�cة���{���e�Z���)�\}��� s�{��\��;V�^��l�a��w�wh�^���r�v��/�J� ��0U0��N��l����g�E��q���R{��MݵD�K���E@��"�qGSϓ�LЄE�iO{��������5fg��L��h�R����M����6oCY��ޛH�G=�_B:Ⓘ��{�)mQt�Æ&lt;�����/,e�~�;���5#x��?���eqwe9m �i�f����&gt;)�ᵍ�Q�Xi)c�Б(P+����2���J����H�Ꭺx��af?[_���L���-���yo��pewq���E����{��]�Ù�!���j&gt;��/R)�`Xc�6�ݏ�7'��������dda�E�_KM��&gt;j��)���;�����c�/�*8���t�&amp;i+r��iY�ْ�F'��8�嚺�qr��0��c�nҳl����8��_(��z0��B*���`[��~x�vi��Y��N�l�lKt��;zz��¦i*D��n�Ƒ5�:E�6�X�k�W��/�!Vi"MEF���nd��)&amp;cY���S���#������4��I.�}EM�}1W��P^t��������|P��P�S�\1m���l��4�J��Fܿ��a'y3��4����e��Pk�Y�n���!������y�,q!wc�rq��3�GV���i���oe@J�u�gז;#�����)d�cH����F����r:�]c��#�pT6���������"���53�jMI!³���;+\[}��������X2��$�ɟ2D��,�L��`���.�c�ӆ����S4���	����3N�� 
+n|$����@#��d�l{+�+e�SY:-%&amp;`��F�x���ʎ�0�桫�e����,mɔ��k�
+������i&gt;�Q+�c�|�� ����U�D������I@w������I%1�Z�r-���(�r
+��&amp;젞[��ya�x Y���Y�vR�$/o��1�Y�apl�A}W����Ud���2q��Z������}^U���Z�)i��eҲ0a����ϩ}�$����;�������2����H'-�$��"�X����������ܷ���MWM�Ř�#J_��}0�L��X�t�.�b�c�o��js����E"�+#25�6W��"���Tv��pU=4y�5S�⎎'���}�7��\�=gZ�S�&gt;�C,�B��c9�jܚ%`"1A ���v�E.��M��mg�����ӊۍ{�8�Y��,u-}̩�b~v��V,rǴ�I�&lt;������e�� ld��ב�c�i�t��PQ�r�� � ��,L��$�UZUIs�b�2�J���]Vm6���z��*�HQ��_J�|�����g�Ķ���Pj+�w$����@6��Se�p����{ !+*a���5�z���؇��枣^e�fuJ���M�_v'�6�nY��S�fi�H�-$sɬ�+r���۞��`��d}�prg9d�T$%}��4���ԍ����]�V�g/PA�uI�tX�й��?���n���f(#��r}kԏ"6��� ���S�*	�+�jF��JԐ����6��ǳ�UqM7�MQ9�����$�˧_3�ጋ�r����z8�lJ'��Y���'�8���jc���y"��!׽��h�O�H� �!ܜ��U3d���L�Z+)���O�����$eH˳U$�ز�Wv����p���Mv:&gt;3`Xs�د�#!�۠�&gt;bؖ�� wr�o�o�m��#�\�+-���{8�5'drfQ-]L���p-�R�UP��ץ�#�Գj����$q�	'�&lt;�#˝��,4p�]�$h�dV;�����U�@��/ˈ�A�&gt; +��&lt;{?��vc���9~U��:�p]�#ذ/Ѓv�l7�E{�$񄨣���]nH�0�ǵ/f��g}�����#TvcM'=5�#�b7�cm�����FB�ۭ��Z:Z�X�uN^6/p��N=�8?5�8ҏ9h$�/���Y�X;�!Py���A�&lt;Y�C�ݢF-mlGy%�Xm��T5P Q�5�����ev�Ach�����3�b���h�`rŶ�=����#��r��XVVY{�������~_\v�OI?{ �,��K)fa��§��wMM`�*� ��6�a늊t��:]������bz��=�(�F�ًs ��ǳ��KU]�W�5gL�w��Y�B1=���)��Q���I[��6��0�q�UC(��bGŶ�~��2��Z�^�jJ{�$�F�U?���yl9�vCéKÆ�2F1��D	����~B���\GI�eYDl�jW:���"=�x�����������T�)�gP�@����gռ3��*�A����/!s���vS�|mGGOCE� �U���[�+~d�c�r&lt;���|�.�c��ݍ��_����J&gt;�g:�((厘7�G,��eo+���dK$[I&lt;#��q����4�H��X��o/��q�&lt;m��b$_|�QOZ�m2(6�e���c9̩2��J�ٖbfc�3��8�8����V��XɱT��ש�s��I����Gt��ϐ��34��R�%�Dj���n^���h�M�x��m��XBu�(W�,vF#}���#��6,UY
+���/���M�9�4�wu���j䲶����[	ŕ��]-;�MNX02"x�~|��q�H��2��c���w�0��o��q�v��f��E���~ʚ�X�f�7ǰ���(��5�xT!��H:��&lt;m�$��&lt;��ӆ�G��[EM���GG
+CK�E���n��l�-�Hi�"v��a�*۠c�&lt;v��8��BavU/e�s�Kau�Z�BV?p��g^�+�&gt;�b�S$�d�"��:��V_&amp;RM����l��Kƒ����PC��M%��'b[��g��h�[�=A���;nO_#m��W��t
+�VJw������v����*g��p�KX��Zߦ�̅,�� Rn�7oRz����U��`����OT#[k��j�����Ud:��1a��-�3ngӦ2��Y��Hܤvf�ͣ��E��-f�!�dB7���7	��:Ar.�|�����:�*�v�)i�YK!���8k0�4�i3dWJ�VK�+�����S�`��̲	��T�{�"�ܠ][��/�5�Z����2��J��k}0��ظ@�Y���o?&lt;R�a,!4�H�նߠ�uLB�'��!F��v�t�w�L��iS�����~XY	���B���o�|e�U�,�Y��n|v�.����S�$��s��l�U5w؝��9bh��Ҭ�ǹ&amp;����
+L�\Ak�|�@Z)�C[puu#����e���m.)ƒ�}C�z�&amp;Y��-ߤ,�����I��1�o$�T�b;��鐨դg�y�9�e�ӫ�z	L|�0����X������SSm&amp;hTN�;���zy�TA�Fd�����OO/&lt;f$�ˬ-��o�c�bviScc�u����P��cO����8M2�3(���]!�����S��!Ti5���q&gt;�c�%cT�������K���:�21�����.��X��F��tu���F(�1�{���qX��P�~�Mή�⊞G�G���B�NW������s7���-ǖ=�+%J�ܳ^��.����xrǵG��tM:j��$5
+?v���F3he�Ŵ%��-�6��z�&lt;�:���okb6&amp;�#kO����0T��v�+Ć6&amp;Ť&gt;+��`�������X����b��1��T�TRok���������#�Б��|�\V�H�1K �-u���!�I1'�z7���+���@��̏���J�l���7+�1Ó����A�#��;��+R��Wج��s&lt;���c��4�����V5k���խ˨V���ysǵ��¼w���ש���~"O�,q&lt;U�]��E��zm��:7]C
+܅ԕm�_�Lz�b�~]q��ĕ��-r,C�Y��tح����`��NY��*l[�����0�a��/�����sJR2�Hn��?�L+5�t��܏&lt;1�r�
+.m{6���0k�0b���ߚ���q�e�8&amp;�k�:d�m�����=��R���])ޣ��Tl����|_o���);A��r��_LZ	�ݒ�	�nG�c���مe=-u3�SN���*1���q�Di�97$|G���\����v??\Kh��ױ�qE�a&amp;��v�4�S!K1}
+��j���a�"�!޺��YM�$�ly�`CRQ��_~}/����5n���1�B�!bi��q���e�f��'��K�ԭۻ��.��]lq�s
+iRh�Ɇw��m/��r��~��B��^��@�z$�Q��%E�ж/���{��;�5٭$�V�TҸF{r�,CXm�i�g��˧Ͳ��ʁf*5Dm��y_���z	Q���y�-���4&lt;�|�ycGuPX��?��5�ƖA�1��ru)��w���*�5&lt;�WƠ׹a����I$q��}~c���IT�w
+Z%:5ͺ�&lt;��)��}Q�+Y��T�%Q5�;��l�JY��h�$�*-�k��b���3&gt;&amp;��E,����^��`���q�e�9�[-cMM,�H�V��l�˔ukS�pL�A2.]0��Xߧ�7���.�,�� �����7),oH;�yc&gt;���b���d��[K6��q|Kx�# �f$�;�������g�\��^],@6om����H�P�T��i.y�=��!"V�cc����(P�����1*KIZ�!��ۻ]Ϋ�*�=YDR�Dїr��l=o�,{��v)5Dh�{Ԓ�񩶓������u|{F�UCǜ?%eKuM�[xQ��ɏ,v��-�=LmD�jA-skzd���;�tS�r�c7�S,j�I���ſ;c�ቲ��H�6�{oa{��,2���Hu�o`y\��E�qQ����dV�����o���J�,J��... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<status status="PASS" starttime="20220223 17:20:58.611" endtime="20220223 17:20:59.283"/>
+</kw>
+<kw name="Choose File" library="RPA.Browser.Selenium">
+<arg>imagem</arg>
+<arg>D:\\teste-rpa-robot\\imagem.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220223 17:20:59.286" level="INFO">Sending D:\teste-rpa-robot\imagem.jpg to browser.</msg>
+<status status="PASS" starttime="20220223 17:20:59.284" endtime="20220223 17:20:59.315"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>Cadastrar</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:59.318" level="INFO">Clicking button 'Cadastrar'.</msg>
+<status status="PASS" starttime="20220223 17:20:59.317" endtime="20220223 17:20:59.364"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:20:59.366" endtime="20220223 17:20:59.375"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:20:59.378" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:20:59.377" endtime="20220223 17:20:59.419"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:56.965" endtime="20220223 17:20:59.421"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:56.964" endtime="20220223 17:20:59.422"/>
+</iter>
+<iter>
+<var name="${product_sell}">{'Nome': 'Ar condicionado', 'Preço': 1200.0, 'Descrição': 'Várias temperaturas.', 'Quantidade': 70.0}</var>
+<kw name="Register Product">
+<arg>${product_sell}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:21:00.441" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:20:59.427" endtime="20220223 17:21:00.441"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:00.444" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:21:00.443" endtime="20220223 17:21:00.486"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>nome</arg>
+<arg>${product_sell}[Nome]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:00.490" level="INFO">Typing text 'Ar condicionado' into text field 'nome'.</msg>
+<status status="PASS" starttime="20220223 17:21:00.488" endtime="20220223 17:21:00.572"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>price</arg>
+<arg>${product_sell}[Preço]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:00.575" level="INFO">Typing text '1200.0' into text field 'price'.</msg>
+<status status="PASS" starttime="20220223 17:21:00.573" endtime="20220223 17:21:00.642"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="descricao"]</arg>
+<arg>${product_sell}[Descrição]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:00.645" level="INFO">Typing text 'Várias temperaturas.' into text field 'css=[data-testid="descricao"]'.</msg>
+<status status="PASS" starttime="20220223 17:21:00.643" endtime="20220223 17:21:00.729"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>quantity</arg>
+<arg>${product_sell}[Quantidade]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:00.734" level="INFO">Typing text '70.0' into text field 'quantity'.</msg>
+<status status="PASS" starttime="20220223 17:21:00.731" endtime="20220223 17:21:00.803"/>
+</kw>
+<kw name="Http Get" library="RPA.HTTP">
+<arg>https://api.thecatapi.com/v1/images/search</arg>
+<arg>overwrite=True</arg>
+<doc>A helper method for ``Get Request`` that will create a session, perform GET
+request, and store the target file, if set by the ``target_file`` parameter.</doc>
+<msg timestamp="20220223 17:21:00.806" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:21:01.005" level="INFO">GET Request : url=https://api.thecatapi.com/v1/images/search 
+ path_url=/v1/images/search 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:21:01.006" level="INFO">GET Response : url=https://api.thecatapi.com/v1/images/search 
+ status=200, reason=OK 
+ headers={'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'vary': 'Origin', 'expires': 'Tue, 03 Jul 2001 06:00:00 GMT', 'last-modified': 'Wed Feb 23 2022 20:21:01 GMT+0000 (Coordinated Universal Time)', 'cache-control': 'post-check=0, pre-check=0', 'content-type': 'application/json; charset=utf-8', 'x-response-time': '1ms', 'X-Cloud-Trace-Context': '685a8cc9e2cde1ae3bc146667aad781e', 'Date': 'Wed, 23 Feb 2022 20:21:01 GMT', 'Server': 'Google Frontend', 'Content-Length': '139'} 
+ body=[{"breeds":[],"categories":[{"id":7,"name":"ties"}],"id":"60i","url":"https://cdn2.thecatapi.com/images/60i.jpg","width":170,"height":135}] 
+ </msg>
+<status status="PASS" starttime="20220223 17:21:00.805" endtime="20220223 17:21:01.006"/>
+</kw>
+<kw name="Download" library="RPA.HTTP">
+<arg>https://cdn2.thecatapi.com/images/ebv.jpg</arg>
+<arg>${OUTPUT_DIR}${/}imagem.jpg</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<msg timestamp="20220223 17:21:01.010" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:21:01.067" level="INFO">GET Request : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ path_url=/images/ebv.jpg 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:21:01.668" level="INFO">GET Response : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 23 Feb 2022 20:21:01 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '28025', 'Connection': 'keep-alive', 'last-modified': 'Thu, 27 Sep 2018 01:09:17 GMT', 'etag': '"236b60fbfb5cde085186493609f37579"', 'x-cache': 'RefreshHit from cloudfront', 'via': '1.1 851117d0ba7b2cbe0cf02406c40397d8.cloudfront.net (CloudFront)', 'x-amz-cf-pop': 'GIG51-C2', 'x-amz-cf-id': 'mN-pc-ggotwdc2OuU_yshN2m1EOWWD5Ci6xv-vhvEZuVx8g6YtwhYw==', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '55', 'Accept-Ranges': 'bytes', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=fcI7RaSvjWvVfnsVAbH3R5MQC6CCu2APFqZP7CBb43lTOD3%2B9MKh1TcWPRnshd9rdtzXw1Lj9azEe8fcOb1mIHaZIv8%2Bk4r%2FDF7lcse4soVTs434%2Fy6L3%2F8rzgJXIQlVtSoWJzHLXboyiXsSBWBWVng%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6e23287d8b2f62a1-BSB', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=����JFIF��C		��C
+
+���"������ߥS=��*��e$�$����=��,�:넒��H@;;��i�c�m.8C}tD�A��S����o|��nY�Ц&gt;�k��+�M�7^#��+�y�|a����P��t˰��)?(,f߻�����.��O�=B�y�sW��b��/V̘Yw���Vo�U�Mz,�M-ǟ��U�Ď_a@��7����; ���Cm�}/����9�S2����Ηf�u3���b��S�ރr����R^պ�c�Hh��"Y�Z�4���o�%I\�*6��z?�\�i��ԢD@���i����Z����k�H�}/5��5�1����#f�t�L:Ҹ�sg�Ѱ�T�B��G������]h޷�m�&lt;�C8��U�V?`�IX�BI��W��qj3SQ�FM�2F����Ұ�U���e$�I!$����(���N�͆���dUf�+�xT�����$�I!$��HY�%��$�&lt;����;�cΈ������%����BI	$,Λ#5V!�%���d1�-F�f٪~`ۛ�F��IX�BK�0�����O�&lt;�Y}m	�TԳT2m�SfA`rhn&gt;*פ�$�E�&gt;Z@�$ݜc�2��{�=Ii��U&gt;6��\�pvpۯI^I$7�7�s43�j��lD3��o�[nVe}yQL�x�^�h kf���H��X	����b���&amp;f����pAK#��&lt;�6������פ�4�"�M�y��'�=7�ƭd.[7FU��؎�d3��U���D[�����qk)h��"�=&gt;�=!o�NV2�#b��.�FI9��K_Hh��3�@+d]@����k������zJI�f���6Ih�!B�-�s�s�����א0�ĕ��.\���҄H�M�
+x�Ϋ&amp;�TOc�B u��z����$����%�h�c�(�׹��.���B9�L�%kUzĂ����a��\�N�F��g޸�q޷�z�3���XbΜ
+�V�qܽ�IJ��S��Ϋ����f�a���`lіrg/�BKr������0r$� J��P��׊��[ZCa%�m&lt;5p�8_MFIy=I�Dnx�gR����Խ4�i@�,sW�+:V_�$w��?K;���ޓ^sT�ݝK47�Y�X���M�:%��i\�ޜI��⃜����Z1������^ƕ��`�&lt;�Wچ�m t�y�=�9%�2�Ƌ��B��VK^�����&lt;bpy�F;�$07
+�e8�'R�qr�%{UnP��ŗSlrBq쐑�4�G�.§��*E���X!�+g�P�+l�dM����Z�$bIcD���"�2�U�s�Z�!9u��Y���oPHq[�&amp;Q�y�q��YP%�q�
+�uńM��͝��!���i��ʲ"u�W���K�6y!�I�-�C_Ky�
+�����I�+�U���`��(�&lt;�m(Y4�&lt;�8�d�%��&lt;Ny�GUV��&lt;�f�v���&lt;�(!��&lt;��ܙC���ÔΧ�&lt;Wf���-��)q�r'Q��Yʖ`�|�st��]��A����7���D2��kD&gt;,��Q,ΑW&lt;�p��f�N���|a�n��&lt;��m��Yk4���`M���ɛy������o�X�Z�N���aKs�}�x����Oe�Z����˘���-��|��[�/��yP�$@��W�)����Ϋ!M(�*���8?_�"��Uc��,�l�E��@�0�D�01,2�&amp;(�C�" �����v�&gt;c��ǔ������J�y��"���;^`�ԍ�����A5t�4/����`P`�(#M�z���.�q�ß�d�BGq)���%=,�����L	t5��4��l1R� P4��ZDr�]%��"�7�$�gt2Fp?5	�Ue�l��$ 	1�� 6Tʂ|�1�Ǵp���"! 1A0Q@q��?n�!;��*"�pw葪�������Y���w�x��[��hD���&amp;�bvE��[�/,"LBvD�I{ňD�.͔G��X�(b{���oN����П��aau�=rB�(��b�����v�M��"����z&amp;�H����g��'o/�QKf�\&amp;�Yl�o�M�x��u�w�(��1�˲�i%�&lt;ȋ�7�XX��.ȪV����K�%�pLEfw�Dn�
+ŗ��줐�\�й.eS�Y�������bu�Vk6P�
+,e~�|�^i]�\������v��$!1 A"2Q��?��#��d����Y�=�k�W�[�5;�e���KfK(��\L�b0r�xJ=�(��D[jМ���Էb:��:o�MS3�9���c�$n;i����+tt��64�ɎPv��8�S��]zc,I����3�n/I���z3*�����5�w�e�Ǹ�&amp;㹛"J�:E�E3$;�b������,$�n/\�&gt;b�T���]��V��Fe��œ�fZj�Z=���c7�MZ��L���.��5�H�#�~]2�1�tqMSL�1��^`��c�#$�16�b^&lt;.V��Y�M�_��pFI�t�W��^�gq+r �~챴��3��2VCnD-zm�Fu�GMd1!�ġ-pơ�f��Q������%���v=ob�קIc�Oql�{��F�C,���r���[�p"����hc+m��[N�+V6-o_�).�ZV�6!i^�^wf��L�F�~���
+i�������)�3#��	;�nN��r:�N���CU��\�՝���h��-R�2�lM1�b�����Ѕ�b���;�l[�)~���O�K/K�;*�露���K!1A"Qa2q�#BR�� ����3�$0br��	C&amp;4Dc���d����?�c5�&lt;�,��_�����I:�K�No��h[.�ij�.{�����vņ9��+���
+�lϊsw�I�S��/c!�=Y��Ը��x��晭DN�����iE��k��}�8�T��;H�[+���3uQf#��E�7�CKՎ������9k�gf��]Jgy�N�9hcg�v����X��`r�i�cY�gu&lt;1��	D����U�*4�6(���7��ܷU�2��
+ڸ���?sSB�1:^@��ѝjo{��euy]Y?�U���U,��bY;��q�(�����x�N#��+��hҮ� ��#�߈m�8&lt;�w��:��e&lt;�H�#1� V�1���,�jb:�zc�ǽ,���Ig]E�v.��l?���d�{D�&gt;i?�s*U̠V&lt;���rXt��_�\u�qYù%g��N[O.gB�:Z��aS}J��sq����duui�AO$��O��q�ʈ���j�F���$������܂X]��6��yfk���=ea��4�,�P��˝6,-��0$\���pęA�����ib	�R���6�}q���|+Ŕ��a1����Փ������&amp;�ۯ��ee&amp;a��]CSM4�)�p��y#b1�\g|I��LR��A���g�{Xa{Y�f5)G�f��#2GLm�Io��ґV��3x`�o߲�I�6��Z���ʳ����&gt;1�Ǿ��U!��L�V�(жV�{pv`�ѵ\�j4���tǰ���ә\�@E��OU*��\X���qYuT��J.�##�0E�+z(3,�7�����5#7�"3��v� �ǈ(V��8G����Z
+
+x!����v�+I*0k�\��&lt;���h&lt;Q��ULUF�e���LIʻ}�\�����Y�ZpMNW4q�Uh��Q{�,����e�x焸�p�REnNX�6Y;��t&amp;0wS��S�A���&gt;q7�\�(i�R��$���Y$�nHNX��&lt;�4��j����X�
+�'{�̓k��1��yU�4�C�B������t�q�{�歗e���M���J�	%�Z��_��v��O4�w�EQK4z���ʒ���d6ku�Q�Ǵ��eI�er�*��A�����c."�,��Ț�Hj��A��q����c�/���޳���ȫ!�n�xijB���;"�LP�P����b���R�N��f�@pw\�|#+(e �.;W�QPD%����6`��P�ry����ُ�4�Y��W
+�j`ָF-`�B����?��WL�����-��Q{��è�GL'g|[��QT&amp;\�����O:��+x�G?,U�?K��Ԯ_K�Bg�	�$��ZB���/`NVc?���ޢj�б�w/{BE�E-mϙ��Bه�,�-u�Q��F�n&gt;Z�qbmא������^$�3)2���1�}DlY�~���g�p�C��&lt;Y�M\!��I
+��y1�|�0��SVQe��mx\�b�VQӝ��M�w�I�3SE(�X�9
+ŉ%ɵ��Ϧ87+� �����R&amp;��ʔ�I]WIvf�~"2|��Ue�4]�[P��J�TU)*�n����KI��E���,IYѣ9��?�G5 躞X����.�r�׸��aɟ3��5)OH��`P��]}��F��������83���sX���&gt;��� 	e%@ z�{d��+��2��:7I� 7����s�~B�k�z�d�Ľ��ӗ�\A��fuՕ�diwZXTꐄ
+����eE��y�s���v�fU,U\�=�(s\��&amp;�7���J�Y��퐋������TI��!��V��x���]ÏQl{$fuy���	��O$�	�����F���d������j����E�$Z�VM���y#(���Slv��o��˪�Z�]OL��4,�����g�G�۟d݄I[�+Y��T�� 
+`IH���`u3.Ý�1�%S�����'-��%FX(�)T�#Qe&amp;�._&lt;vkKSY�ƩY����7��3|�u���kM��*iRb����nl���y�&lt;Jj�6����o�@�&amp;�4��_����ϫ�)3b7�uv�*�d�r$Z��c�j��'����_u�*"�������\	C�`�OWd��_����ڿ�Wj�C��z��I����h�@m'{��o\ey�S��'Ng�}�U�I
+��&amp;���*ϲ�6�=\�/J�f�1���$ra��ǲQe�]�7{��&gt;�!� �Qt� �,��c�h��x;6��5�:�	�d~L6&gt;�㲪
+�����G�&amp;z�����QHb:�4F�m;�{�r�'��2�����c�cة���{���e�Z���)�\}��� s�{��\��;V�^��l�a��w�wh�^���r�v��/�J� ��0U0��N��l����g�E��q���R{��MݵD�K���E@��"�qGSϓ�LЄE�iO{��������5fg��L��h�R����M����6oCY��ޛH�G=�_B:Ⓘ��{�)mQt�Æ&lt;�����/,e�~�;���5#x��?���eqwe9m �i�f����&gt;)�ᵍ�Q�Xi)c�Б(P+����2���J����H�Ꭺx��af?[_���L���-���yo��pewq���E����{��]�Ù�!���j&gt;��/R)�`Xc�6�ݏ�7'��������dda�E�_KM��&gt;j��)���;�����c�/�*8���t�&amp;i+r��iY�ْ�F'��8�嚺�qr��0��c�nҳl����8��_(��z0��B*���`[��~x�vi��Y��N�l�lKt��;zz��¦i*D��n�Ƒ5�:E�6�X�k�W��/�!Vi"MEF���nd��)&amp;cY���S���#������4��I.�}EM�}1W��P^t��������|P��P�S�\1m���l��4�J��Fܿ��a'y3��4����e��Pk�Y�n���!������y�,q!wc�rq��3�GV���i���oe@J�u�gז;#�����)d�cH����F����r:�]c��#�pT6���������"���53�jMI!³���;+\[}��������X2��$�ɟ2D��,�L��`���.�c�ӆ����S4���	����3N�� 
+n|$����@#��d�l{+�+e�SY:-%&amp;`��F�x���ʎ�0�桫�e����,mɔ��k�
+������i&gt;�Q+�c�|�� ����U�D������I@w������I%1�Z�r-���(�r
+��&amp;젞[��ya�x Y���Y�vR�$/o��1�Y�apl�A}W����Ud���2q��Z������}^U���Z�)i��eҲ0a����ϩ}�$����;�������2����H'-�$��"�X����������ܷ���MWM�Ř�#J_��}0�L��X�t�.�b�c�o��js����E"�+#25�6W��"���Tv��pU=4y�5S�⎎'���}�7��\�=gZ�S�&gt;�C,�B��c9�jܚ%`"1A ���v�E.��M��mg�����ӊۍ{�8�Y��,u-}̩�b~v��V,rǴ�I�&lt;������e�� ld��ב�c�i�t��PQ�r�� � ��,L��$�UZUIs�b�2�J���]Vm6���z��*�HQ��_J�|�����g�Ķ���Pj+�w$����@6��Se�p����{ !+*a���5�z���؇��枣^e�fuJ���M�_v'�6�nY��S�fi�H�-$sɬ�+r���۞��`��d}�prg9d�T$%}��4���ԍ����]�V�g/PA�uI�tX�й��?���n���f(#��r}kԏ"6��� ���S�*	�+�jF��JԐ����6��ǳ�UqM7�MQ9�����$�˧_3�ጋ�r����z8�lJ'��Y���'�8���jc���y"��!׽��h�O�H� �!ܜ��U3d���L�Z+)���O�����$eH˳U$�ز�Wv����p���Mv:&gt;3`Xs�د�#!�۠�&gt;bؖ�� wr�o�o�m��#�\�+-���{8�5'drfQ-]L���p-�R�UP��ץ�#�Գj����$q�	'�&lt;�#˝��,4p�]�$h�dV;�����U�@��/ˈ�A�&gt; +��&lt;{?��vc���9~U��:�p]�#ذ/Ѓv�l7�E{�$񄨣���]nH�0�ǵ/f��g}�����#TvcM'=5�#�b7�cm�����FB�ۭ��Z:Z�X�uN^6/p��N=�8?5�8ҏ9h$�/���Y�X;�!Py���A�&lt;Y�C�ݢF-mlGy%�Xm��T5P Q�5�����ev�Ach�����3�b���h�`rŶ�=����#��r��XVVY{�������~_\v�OI?{ �,��K)fa��§��wMM`�*� ��6�a늊t��:]������bz��=�(�F�ًs ��ǳ��KU]�W�5gL�w��Y�B1=���)��Q���I[��6��0�q�UC(��bGŶ�~��2��Z�^�jJ{�$�F�U?���yl9�vCéKÆ�2F1��D	����~B���\GI�eYDl�jW:���"=�x�����������T�)�gP�@����gռ3��*�A����/!s���vS�|mGGOCE� �U���[�+~d�c�r&lt;���|�.�c��ݍ��_����J&gt;�g:�((厘7�G,��eo+���dK$[I&lt;#��q����4�H��X��o/��q�&lt;m��b$_|�QOZ�m2(6�e���c9̩2��J�ٖbfc�3��8�8����V��XɱT��ש�s��I����Gt��ϐ��34��R�%�Dj���n^���h�M�x��m��XBu�(W�,vF#}���#��6,UY
+���/���M�9�4�wu���j䲶����[	ŕ��]-;�MNX02"x�~|��q�H��2��c���w�0��o��q�v��f��E���~ʚ�X�f�7ǰ���(��5�xT!��H:��&lt;m�$��&lt;��ӆ�G��[EM���GG
+CK�E���n��l�-�Hi�"v��a�*۠c�&lt;v��8��BavU/e�s�Kau�Z�BV?p��g^�+�&gt;�b�S$�d�"��:��V_&amp;RM����l��Kƒ����PC��M%��'b[��g��h�[�=A���;nO_#m��W��t
+�VJw������v����*g��p�KX��Zߦ�̅,�� Rn�7oRz����U��`����OT#[k��j�����Ud:��1a��-�3ngӦ2��Y��Hܤvf�ͣ��E��-f�!�dB7���7	��:Ar.�|�����:�*�v�)i�YK!���8k0�4�i3dWJ�VK�+�����S�`��̲	��T�{�"�ܠ][��/�5�Z����2��J��k}0��ظ@�Y���o?&lt;R�a,!4�H�նߠ�uLB�'��!F��v�t�w�L��iS�����~XY	���B���o�|e�U�,�Y��n|v�.����S�$��s��l�U5w؝��9bh��Ҭ�ǹ&amp;����
+L�\Ak�|�@Z)�C[puu#����e���m.)ƒ�}C�z�&amp;Y��-ߤ,�����I��1�o$�T�b;��鐨դg�y�9�e�ӫ�z	L|�0����X������SSm&amp;hTN�;���zy�TA�Fd�����OO/&lt;f$�ˬ-��o�c�bviScc�u����P��cO����8M2�3(���]!�����S��!Ti5���q&gt;�c�%cT�������K���:�21�����.��X��F��tu���F(�1�{���qX��P�~�Mή�⊞G�G���B�NW������s7���-ǖ=�+%J�ܳ^��.����xrǵG��tM:j��$5
+?v���F3he�Ŵ%��-�6��z�&lt;�:���okb6&amp;�#kO����0T��v�+Ć6&amp;Ť&gt;+��`�������X����b��1��T�TRok���������#�Б��|�\V�H�1K �-u���!�I1'�z7���+���@��̏���J�l���7+�1Ó����A�#��;��+R��Wج��s&lt;���c��4�����V5k���խ˨V���ysǵ��¼w���ש���~"O�,q&lt;U�]��E��zm��:7]C
+܅ԕm�_�Lz�b�~]q��ĕ��-r,C�Y��tح����`��NY��*l[�����0�a��/�����sJR2�Hn��?�L+5�t��܏&lt;1�r�
+.m{6���0k�0b���ߚ���q�e�8&amp;�k�:d�m�����=��R���])ޣ��Tl����|_o���);A��r��_LZ	�ݒ�	�nG�c���مe=-u3�SN���*1���q�Di�97$|G���\����v??\Kh��ױ�qE�a&amp;��v�4�S!K1}
+��j���a�"�!޺��YM�$�ly�`CRQ��_~}/����5n���1�B�!bi��q���e�f��'��K�ԭۻ��.��]lq�s
+iRh�Ɇw��m/��r��~��B��^��@�z$�Q��%E�ж/���{��;�5٭$�V�TҸF{r�,CXm�i�g��˧Ͳ��ʁf*5Dm��y_���z	Q���y�-���4&lt;�|�ycGuPX��?��5�ƖA�1��ru)��w���*�5&lt;�WƠ׹a����I$q��}~c���IT�w
+Z%:5ͺ�&lt;��)��}Q�+Y��T�%Q5�;��l�JY��h�$�*-�k��b���3&gt;&amp;��E,����^��`���q�e�9�[-cMM,�H�V��l�˔ukS�pL�A2.]0��Xߧ�7���.�,�� �����7),oH;�yc&gt;���b���d��[K6��q|Kx�# �f$�;�������g�\��^],@6om����H�P�T��i.y�=��!"V�cc����(P�����1*KIZ�!��ۻ]Ϋ�*�=YDR�Dїr��l=o�,{��v)5Dh�{Ԓ�񩶓������u|{F�UCǜ?%eKuM�[xQ��ɏ,v��-�=LmD�jA-skzd���;�tS�r�c7�S,j�I���ſ;c�ቲ��H�6�{oa{��,2���Hu�o`y\��E�qQ����dV�����o���J�,J��... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<status status="PASS" starttime="20220223 17:21:01.008" endtime="20220223 17:21:01.671"/>
+</kw>
+<kw name="Choose File" library="RPA.Browser.Selenium">
+<arg>imagem</arg>
+<arg>D:\\teste-rpa-robot\\imagem.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220223 17:21:01.674" level="INFO">Sending D:\teste-rpa-robot\imagem.jpg to browser.</msg>
+<status status="PASS" starttime="20220223 17:21:01.672" endtime="20220223 17:21:01.704"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>Cadastrar</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:01.707" level="INFO">Clicking button 'Cadastrar'.</msg>
+<status status="PASS" starttime="20220223 17:21:01.705" endtime="20220223 17:21:01.752"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:21:01.753" endtime="20220223 17:21:01.761"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:01.765" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:21:01.763" endtime="20220223 17:21:01.806"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:59.424" endtime="20220223 17:21:01.807"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:59.423" endtime="20220223 17:21:01.808"/>
+</iter>
+<iter>
+<var name="${product_sell}">{'Nome': 'Smart TV', 'Preço': 1350.0, 'Descrição': 'Led, 32 polegadas.', 'Quantidade': 200.0}</var>
+<kw name="Register Product">
+<arg>${product_sell}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220223 17:21:02.819" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220223 17:21:01.813" endtime="20220223 17:21:02.820"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:02.823" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:21:02.821" endtime="20220223 17:21:02.874"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>nome</arg>
+<arg>${product_sell}[Nome]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:02.877" level="INFO">Typing text 'Smart TV' into text field 'nome'.</msg>
+<status status="PASS" starttime="20220223 17:21:02.875" endtime="20220223 17:21:02.954"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>price</arg>
+<arg>${product_sell}[Preço]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:02.957" level="INFO">Typing text '1350.0' into text field 'price'.</msg>
+<status status="PASS" starttime="20220223 17:21:02.955" endtime="20220223 17:21:03.024"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="descricao"]</arg>
+<arg>${product_sell}[Descrição]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:03.027" level="INFO">Typing text 'Led, 32 polegadas.' into text field 'css=[data-testid="descricao"]'.</msg>
+<status status="PASS" starttime="20220223 17:21:03.025" endtime="20220223 17:21:03.107"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>quantity</arg>
+<arg>${product_sell}[Quantidade]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:03.111" level="INFO">Typing text '200.0' into text field 'quantity'.</msg>
+<status status="PASS" starttime="20220223 17:21:03.109" endtime="20220223 17:21:03.178"/>
+</kw>
+<kw name="Http Get" library="RPA.HTTP">
+<arg>https://api.thecatapi.com/v1/images/search</arg>
+<arg>overwrite=True</arg>
+<doc>A helper method for ``Get Request`` that will create a session, perform GET
+request, and store the target file, if set by the ``target_file`` parameter.</doc>
+<msg timestamp="20220223 17:21:03.182" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:21:03.378" level="INFO">GET Request : url=https://api.thecatapi.com/v1/images/search 
+ path_url=/v1/images/search 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:21:03.379" level="INFO">GET Response : url=https://api.thecatapi.com/v1/images/search 
+ status=200, reason=OK 
+ headers={'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'vary': 'Origin', 'expires': 'Tue, 03 Jul 2001 06:00:00 GMT', 'last-modified': 'Wed Feb 23 2022 20:21:03 GMT+0000 (Coordinated Universal Time)', 'cache-control': 'post-check=0, pre-check=0', 'content-type': 'application/json; charset=utf-8', 'x-response-time': '1ms', 'X-Cloud-Trace-Context': '0cc08e145eb0047b65c9498a7b60ac55', 'Date': 'Wed, 23 Feb 2022 20:21:03 GMT', 'Server': 'Google Frontend', 'Content-Length': '115'} 
+ body=[{"breeds":[],"id":"WuKpNLUO5","url":"https://cdn2.thecatapi.com/images/WuKpNLUO5.jpg","width":3264,"height":2448}] 
+ </msg>
+<status status="PASS" starttime="20220223 17:21:03.180" endtime="20220223 17:21:03.380"/>
+</kw>
+<kw name="Download" library="RPA.HTTP">
+<arg>https://cdn2.thecatapi.com/images/ebv.jpg</arg>
+<arg>${OUTPUT_DIR}${/}imagem.jpg</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<msg timestamp="20220223 17:21:03.384" level="INFO">Using already existing HTTP session</msg>
+<msg timestamp="20220223 17:21:03.429" level="INFO">GET Request : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ path_url=/images/ebv.jpg 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:21:04.031" level="INFO">GET Response : url=https://cdn2.thecatapi.com/images/ebv.jpg 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 23 Feb 2022 20:21:04 GMT', 'Content-Type': 'image/jpeg', 'Content-Length': '28025', 'Connection': 'keep-alive', 'last-modified': 'Thu, 27 Sep 2018 01:09:17 GMT', 'etag': '"236b60fbfb5cde085186493609f37579"', 'x-cache': 'RefreshHit from cloudfront', 'via': '1.1 851117d0ba7b2cbe0cf02406c40397d8.cloudfront.net (CloudFront)', 'x-amz-cf-pop': 'GIG51-C2', 'x-amz-cf-id': 'mN-pc-ggotwdc2OuU_yshN2m1EOWWD5Ci6xv-vhvEZuVx8g6YtwhYw==', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '58', 'Accept-Ranges': 'bytes', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=tcThdRTWpbdKTuDOUYLoC5hPXFxQo8tnZ7Ea97dTcalvyEqusKN%2BUOrF0X82A%2FMgxhV7TBjw9SNev%2BHlo%2BHLDT7Ay%2BMSGExXRK0QN7wNv4QKQ38MPrKxqOMVA9CImKhijSooX4ydV13DTFU6SYxEBm8%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '6e23288c59ac62a1-BSB', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=����JFIF��C		��C
+
+���"������ߥS=��*��e$�$����=��,�:넒��H@;;��i�c�m.8C}tD�A��S����o|��nY�Ц&gt;�k��+�M�7^#��+�y�|a����P��t˰��)?(,f߻�����.��O�=B�y�sW��b��/V̘Yw���Vo�U�Mz,�M-ǟ��U�Ď_a@��7����; ���Cm�}/����9�S2����Ηf�u3���b��S�ރr����R^պ�c�Hh��"Y�Z�4���o�%I\�*6��z?�\�i��ԢD@���i����Z����k�H�}/5��5�1����#f�t�L:Ҹ�sg�Ѱ�T�B��G������]h޷�m�&lt;�C8��U�V?`�IX�BI��W��qj3SQ�FM�2F����Ұ�U���e$�I!$����(���N�͆���dUf�+�xT�����$�I!$��HY�%��$�&lt;����;�cΈ������%����BI	$,Λ#5V!�%���d1�-F�f٪~`ۛ�F��IX�BK�0�����O�&lt;�Y}m	�TԳT2m�SfA`rhn&gt;*פ�$�E�&gt;Z@�$ݜc�2��{�=Ii��U&gt;6��\�pvpۯI^I$7�7�s43�j��lD3��o�[nVe}yQL�x�^�h kf���H��X	����b���&amp;f����pAK#��&lt;�6������פ�4�"�M�y��'�=7�ƭd.[7FU��؎�d3��U���D[�����qk)h��"�=&gt;�=!o�NV2�#b��.�FI9��K_Hh��3�@+d]@����k������zJI�f���6Ih�!B�-�s�s�����א0�ĕ��.\���҄H�M�
+x�Ϋ&amp;�TOc�B u��z����$����%�h�c�(�׹��.���B9�L�%kUzĂ����a��\�N�F��g޸�q޷�z�3���XbΜ
+�V�qܽ�IJ��S��Ϋ����f�a���`lіrg/�BKr������0r$� J��P��׊��[ZCa%�m&lt;5p�8_MFIy=I�Dnx�gR����Խ4�i@�,sW�+:V_�$w��?K;���ޓ^sT�ݝK47�Y�X���M�:%��i\�ޜI��⃜����Z1������^ƕ��`�&lt;�Wچ�m t�y�=�9%�2�Ƌ��B��VK^�����&lt;bpy�F;�$07
+�e8�'R�qr�%{UnP��ŗSlrBq쐑�4�G�.§��*E���X!�+g�P�+l�dM����Z�$bIcD���"�2�U�s�Z�!9u��Y���oPHq[�&amp;Q�y�q��YP%�q�
+�uńM��͝��!���i��ʲ"u�W���K�6y!�I�-�C_Ky�
+�����I�+�U���`��(�&lt;�m(Y4�&lt;�8�d�%��&lt;Ny�GUV��&lt;�f�v���&lt;�(!��&lt;��ܙC���ÔΧ�&lt;Wf���-��)q�r'Q��Yʖ`�|�st��]��A����7���D2��kD&gt;,��Q,ΑW&lt;�p��f�N���|a�n��&lt;��m��Yk4���`M���ɛy������o�X�Z�N���aKs�}�x����Oe�Z����˘���-��|��[�/��yP�$@��W�)����Ϋ!M(�*���8?_�"��Uc��,�l�E��@�0�D�01,2�&amp;(�C�" �����v�&gt;c��ǔ������J�y��"���;^`�ԍ�����A5t�4/����`P`�(#M�z���.�q�ß�d�BGq)���%=,�����L	t5��4��l1R� P4��ZDr�]%��"�7�$�gt2Fp?5	�Ue�l��$ 	1�� 6Tʂ|�1�Ǵp���"! 1A0Q@q��?n�!;��*"�pw葪�������Y���w�x��[��hD���&amp;�bvE��[�/,"LBvD�I{ňD�.͔G��X�(b{���oN����П��aau�=rB�(��b�����v�M��"����z&amp;�H����g��'o/�QKf�\&amp;�Yl�o�M�x��u�w�(��1�˲�i%�&lt;ȋ�7�XX��.ȪV����K�%�pLEfw�Dn�
+ŗ��줐�\�й.eS�Y�������bu�Vk6P�
+,e~�|�^i]�\������v��$!1 A"2Q��?��#��d����Y�=�k�W�[�5;�e���KfK(��\L�b0r�xJ=�(��D[jМ���Էb:��:o�MS3�9���c�$n;i����+tt��64�ɎPv��8�S��]zc,I����3�n/I���z3*�����5�w�e�Ǹ�&amp;㹛"J�:E�E3$;�b������,$�n/\�&gt;b�T���]��V��Fe��œ�fZj�Z=���c7�MZ��L���.��5�H�#�~]2�1�tqMSL�1��^`��c�#$�16�b^&lt;.V��Y�M�_��pFI�t�W��^�gq+r �~챴��3��2VCnD-zm�Fu�GMd1!�ġ-pơ�f��Q������%���v=ob�קIc�Oql�{��F�C,���r���[�p"����hc+m��[N�+V6-o_�).�ZV�6!i^�^wf��L�F�~���
+i�������)�3#��	;�nN��r:�N���CU��\�՝���h��-R�2�lM1�b�����Ѕ�b���;�l[�)~���O�K/K�;*�露���K!1A"Qa2q�#BR�� ����3�$0br��	C&amp;4Dc���d����?�c5�&lt;�,��_�����I:�K�No��h[.�ij�.{�����vņ9��+���
+�lϊsw�I�S��/c!�=Y��Ը��x��晭DN�����iE��k��}�8�T��;H�[+���3uQf#��E�7�CKՎ������9k�gf��]Jgy�N�9hcg�v����X��`r�i�cY�gu&lt;1��	D����U�*4�6(���7��ܷU�2��
+ڸ���?sSB�1:^@��ѝjo{��euy]Y?�U���U,��bY;��q�(�����x�N#��+��hҮ� ��#�߈m�8&lt;�w��:��e&lt;�H�#1� V�1���,�jb:�zc�ǽ,���Ig]E�v.��l?���d�{D�&gt;i?�s*U̠V&lt;���rXt��_�\u�qYù%g��N[O.gB�:Z��aS}J��sq����duui�AO$��O��q�ʈ���j�F���$������܂X]��6��yfk���=ea��4�,�P��˝6,-��0$\���pęA�����ib	�R���6�}q���|+Ŕ��a1����Փ������&amp;�ۯ��ee&amp;a��]CSM4�)�p��y#b1�\g|I��LR��A���g�{Xa{Y�f5)G�f��#2GLm�Io��ґV��3x`�o߲�I�6��Z���ʳ����&gt;1�Ǿ��U!��L�V�(жV�{pv`�ѵ\�j4���tǰ���ә\�@E��OU*��\X���qYuT��J.�##�0E�+z(3,�7�����5#7�"3��v� �ǈ(V��8G����Z
+
+x!����v�+I*0k�\��&lt;���h&lt;Q��ULUF�e���LIʻ}�\�����Y�ZpMNW4q�Uh��Q{�,����e�x焸�p�REnNX�6Y;��t&amp;0wS��S�A���&gt;q7�\�(i�R��$���Y$�nHNX��&lt;�4��j����X�
+�'{�̓k��1��yU�4�C�B������t�q�{�歗e���M���J�	%�Z��_��v��O4�w�EQK4z���ʒ���d6ku�Q�Ǵ��eI�er�*��A�����c."�,��Ț�Hj��A��q����c�/���޳���ȫ!�n�xijB���;"�LP�P����b���R�N��f�@pw\�|#+(e �.;W�QPD%����6`��P�ry����ُ�4�Y��W
+�j`ָF-`�B����?��WL�����-��Q{��è�GL'g|[��QT&amp;\�����O:��+x�G?,U�?K��Ԯ_K�Bg�	�$��ZB���/`NVc?���ޢj�б�w/{BE�E-mϙ��Bه�,�-u�Q��F�n&gt;Z�qbmא������^$�3)2���1�}DlY�~���g�p�C��&lt;Y�M\!��I
+��y1�|�0��SVQe��mx\�b�VQӝ��M�w�I�3SE(�X�9
+ŉ%ɵ��Ϧ87+� �����R&amp;��ʔ�I]WIvf�~"2|��Ue�4]�[P��J�TU)*�n����KI��E���,IYѣ9��?�G5 躞X����.�r�׸��aɟ3��5)OH��`P��]}��F��������83���sX���&gt;��� 	e%@ z�{d��+��2��:7I� 7����s�~B�k�z�d�Ľ��ӗ�\A��fuՕ�diwZXTꐄ
+����eE��y�s���v�fU,U\�=�(s\��&amp;�7���J�Y��퐋������TI��!��V��x���]ÏQl{$fuy���	��O$�	�����F���d������j����E�$Z�VM���y#(���Slv��o��˪�Z�]OL��4,�����g�G�۟d݄I[�+Y��T�� 
+`IH���`u3.Ý�1�%S�����'-��%FX(�)T�#Qe&amp;�._&lt;vkKSY�ƩY����7��3|�u���kM��*iRb����nl���y�&lt;Jj�6����o�@�&amp;�4��_����ϫ�)3b7�uv�*�d�r$Z��c�j��'����_u�*"�������\	C�`�OWd��_����ڿ�Wj�C��z��I����h�@m'{��o\ey�S��'Ng�}�U�I
+��&amp;���*ϲ�6�=\�/J�f�1���$ra��ǲQe�]�7{��&gt;�!� �Qt� �,��c�h��x;6��5�:�	�d~L6&gt;�㲪
+�����G�&amp;z�����QHb:�4F�m;�{�r�'��2�����c�cة���{���e�Z���)�\}��� s�{��\��;V�^��l�a��w�wh�^���r�v��/�J� ��0U0��N��l����g�E��q���R{��MݵD�K���E@��"�qGSϓ�LЄE�iO{��������5fg��L��h�R����M����6oCY��ޛH�G=�_B:Ⓘ��{�)mQt�Æ&lt;�����/,e�~�;���5#x��?���eqwe9m �i�f����&gt;)�ᵍ�Q�Xi)c�Б(P+����2���J����H�Ꭺx��af?[_���L���-���yo��pewq���E����{��]�Ù�!���j&gt;��/R)�`Xc�6�ݏ�7'��������dda�E�_KM��&gt;j��)���;�����c�/�*8���t�&amp;i+r��iY�ْ�F'��8�嚺�qr��0��c�nҳl����8��_(��z0��B*���`[��~x�vi��Y��N�l�lKt��;zz��¦i*D��n�Ƒ5�:E�6�X�k�W��/�!Vi"MEF���nd��)&amp;cY���S���#������4��I.�}EM�}1W��P^t��������|P��P�S�\1m���l��4�J��Fܿ��a'y3��4����e��Pk�Y�n���!������y�,q!wc�rq��3�GV���i���oe@J�u�gז;#�����)d�cH����F����r:�]c��#�pT6���������"���53�jMI!³���;+\[}��������X2��$�ɟ2D��,�L��`���.�c�ӆ����S4���	����3N�� 
+n|$����@#��d�l{+�+e�SY:-%&amp;`��F�x���ʎ�0�桫�e����,mɔ��k�
+������i&gt;�Q+�c�|�� ����U�D������I@w������I%1�Z�r-���(�r
+��&amp;젞[��ya�x Y���Y�vR�$/o��1�Y�apl�A}W����Ud���2q��Z������}^U���Z�)i��eҲ0a����ϩ}�$����;�������2����H'-�$��"�X����������ܷ���MWM�Ř�#J_��}0�L��X�t�.�b�c�o��js����E"�+#25�6W��"���Tv��pU=4y�5S�⎎'���}�7��\�=gZ�S�&gt;�C,�B��c9�jܚ%`"1A ���v�E.��M��mg�����ӊۍ{�8�Y��,u-}̩�b~v��V,rǴ�I�&lt;������e�� ld��ב�c�i�t��PQ�r�� � ��,L��$�UZUIs�b�2�J���]Vm6���z��*�HQ��_J�|�����g�Ķ���Pj+�w$����@6��Se�p����{ !+*a���5�z���؇��枣^e�fuJ���M�_v'�6�nY��S�fi�H�-$sɬ�+r���۞��`��d}�prg9d�T$%}��4���ԍ����]�V�g/PA�uI�tX�й��?���n���f(#��r}kԏ"6��� ���S�*	�+�jF��JԐ����6��ǳ�UqM7�MQ9�����$�˧_3�ጋ�r����z8�lJ'��Y���'�8���jc���y"��!׽��h�O�H� �!ܜ��U3d���L�Z+)���O�����$eH˳U$�ز�Wv����p���Mv:&gt;3`Xs�د�#!�۠�&gt;bؖ�� wr�o�o�m��#�\�+-���{8�5'drfQ-]L���p-�R�UP��ץ�#�Գj����$q�	'�&lt;�#˝��,4p�]�$h�dV;�����U�@��/ˈ�A�&gt; +��&lt;{?��vc���9~U��:�p]�#ذ/Ѓv�l7�E{�$񄨣���]nH�0�ǵ/f��g}�����#TvcM'=5�#�b7�cm�����FB�ۭ��Z:Z�X�uN^6/p��N=�8?5�8ҏ9h$�/���Y�X;�!Py���A�&lt;Y�C�ݢF-mlGy%�Xm��T5P Q�5�����ev�Ach�����3�b���h�`rŶ�=����#��r��XVVY{�������~_\v�OI?{ �,��K)fa��§��wMM`�*� ��6�a늊t��:]������bz��=�(�F�ًs ��ǳ��KU]�W�5gL�w��Y�B1=���)��Q���I[��6��0�q�UC(��bGŶ�~��2��Z�^�jJ{�$�F�U?���yl9�vCéKÆ�2F1��D	����~B���\GI�eYDl�jW:���"=�x�����������T�)�gP�@����gռ3��*�A����/!s���vS�|mGGOCE� �U���[�+~d�c�r&lt;���|�.�c��ݍ��_����J&gt;�g:�((厘7�G,��eo+���dK$[I&lt;#��q����4�H��X��o/��q�&lt;m��b$_|�QOZ�m2(6�e���c9̩2��J�ٖbfc�3��8�8����V��XɱT��ש�s��I����Gt��ϐ��34��R�%�Dj���n^���h�M�x��m��XBu�(W�,vF#}���#��6,UY
+���/���M�9�4�wu���j䲶����[	ŕ��]-;�MNX02"x�~|��q�H��2��c���w�0��o��q�v��f��E���~ʚ�X�f�7ǰ���(��5�xT!��H:��&lt;m�$��&lt;��ӆ�G��[EM���GG
+CK�E���n��l�-�Hi�"v��a�*۠c�&lt;v��8��BavU/e�s�Kau�Z�BV?p��g^�+�&gt;�b�S$�d�"��:��V_&amp;RM����l��Kƒ����PC��M%��'b[��g��h�[�=A���;nO_#m��W��t
+�VJw������v����*g��p�KX��Zߦ�̅,�� Rn�7oRz����U��`����OT#[k��j�����Ud:��1a��-�3ngӦ2��Y��Hܤvf�ͣ��E��-f�!�dB7���7	��:Ar.�|�����:�*�v�)i�YK!���8k0�4�i3dWJ�VK�+�����S�`��̲	��T�{�"�ܠ][��/�5�Z����2��J��k}0��ظ@�Y���o?&lt;R�a,!4�H�նߠ�uLB�'��!F��v�t�w�L��iS�����~XY	���B���o�|e�U�,�Y��n|v�.����S�$��s��l�U5w؝��9bh��Ҭ�ǹ&amp;����
+L�\Ak�|�@Z)�C[puu#����e���m.)ƒ�}C�z�&amp;Y��-ߤ,�����I��1�o$�T�b;��鐨դg�y�9�e�ӫ�z	L|�0����X������SSm&amp;hTN�;���zy�TA�Fd�����OO/&lt;f$�ˬ-��o�c�bviScc�u����P��cO����8M2�3(���]!�����S��!Ti5���q&gt;�c�%cT�������K���:�21�����.��X��F��tu���F(�1�{���qX��P�~�Mή�⊞G�G���B�NW������s7���-ǖ=�+%J�ܳ^��.����xrǵG��tM:j��$5
+?v���F3he�Ŵ%��-�6��z�&lt;�:���okb6&amp;�#kO����0T��v�+Ć6&amp;Ť&gt;+��`�������X����b��1��T�TRok���������#�Б��|�\V�H�1K �-u���!�I1'�z7���+���@��̏���J�l���7+�1Ó����A�#��;��+R��Wج��s&lt;���c��4�����V5k���խ˨V���ysǵ��¼w���ש���~"O�,q&lt;U�]��E��zm��:7]C
+܅ԕm�_�Lz�b�~]q��ĕ��-r,C�Y��tح����`��NY��*l[�����0�a��/�����sJR2�Hn��?�L+5�t��܏&lt;1�r�
+.m{6���0k�0b���ߚ���q�e�8&amp;�k�:d�m�����=��R���])ޣ��Tl����|_o���);A��r��_LZ	�ݒ�	�nG�c���مe=-u3�SN���*1���q�Di�97$|G���\����v??\Kh��ױ�qE�a&amp;��v�4�S!K1}
+��j���a�"�!޺��YM�$�ly�`CRQ��_~}/����5n���1�B�!bi��q���e�f��'��K�ԭۻ��.��]lq�s
+iRh�Ɇw��m/��r��~��B��^��@�z$�Q��%E�ж/���{��;�5٭$�V�TҸF{r�,CXm�i�g��˧Ͳ��ʁf*5Dm��y_���z	Q���y�-���4&lt;�|�ycGuPX��?��5�ƖA�1��ru)��w���*�5&lt;�WƠ׹a����I$q��}~c���IT�w
+Z%:5ͺ�&lt;��)��}Q�+Y��T�%Q5�;��l�JY��h�$�*-�k��b���3&gt;&amp;��E,����^��`���q�e�9�[-cMM,�H�V��l�˔ukS�pL�A2.]0��Xߧ�7���.�,�� �����7),oH;�yc&gt;���b���d��[K6��q|Kx�# �f$�;�������g�\��^],@6om����H�P�T��i.y�=��!"V�cc����(P�����1*KIZ�!��ۻ]Ϋ�*�=YDR�Dїr��l=o�,{��v)5Dh�{Ԓ�񩶓������u|{F�UCǜ?%eKuM�[xQ��ɏ,v��-�=LmD�jA-skzd���;�tS�r�c7�S,j�I���ſ;c�ቲ��H�6�{oa{��,2���Hu�o`y\��E�qQ����dV�����o���J�,J��... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<status status="PASS" starttime="20220223 17:21:03.381" endtime="20220223 17:21:04.034"/>
+</kw>
+<kw name="Choose File" library="RPA.Browser.Selenium">
+<arg>imagem</arg>
+<arg>D:\\teste-rpa-robot\\imagem.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220223 17:21:04.037" level="INFO">Sending D:\teste-rpa-robot\imagem.jpg to browser.</msg>
+<status status="PASS" starttime="20220223 17:21:04.035" endtime="20220223 17:21:04.066"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>Cadastrar</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:04.069" level="INFO">Clicking button 'Cadastrar'.</msg>
+<status status="PASS" starttime="20220223 17:21:04.067" endtime="20220223 17:21:04.114"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:21:04.116" endtime="20220223 17:21:04.124"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="cadastrar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:04.127" level="INFO">Clicking link 'css=[data-testid="cadastrar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:21:04.126" endtime="20220223 17:21:04.169"/>
+</kw>
+<status status="PASS" starttime="20220223 17:21:01.810" endtime="20220223 17:21:04.170"/>
+</kw>
+<status status="PASS" starttime="20220223 17:21:01.809" endtime="20220223 17:21:04.171"/>
+</iter>
+<status status="PASS" starttime="20220223 17:20:51.758" endtime="20220223 17:21:04.172"/>
+</for>
+<status status="PASS" starttime="20220223 17:20:51.206" endtime="20220223 17:21:04.173"/>
+</kw>
+<kw name="List Products">
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="listar-produtos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:21:04.177" endtime="20220223 17:21:04.189"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="listar-produtos"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220223 17:21:04.192" level="INFO">Clicking link 'css=[data-testid="listar-produtos"]'.</msg>
+<status status="PASS" starttime="20220223 17:21:04.191" endtime="20220223 17:21:04.235"/>
+</kw>
+<status status="PASS" starttime="20220223 17:21:04.175" endtime="20220223 17:21:04.236"/>
+</kw>
+<kw name="Export the table as a Excel">
+<kw name="Create Workbook" library="RPA.Excel.Files">
+<arg>produtos.xlsx</arg>
+<doc>Create and open a new Excel workbook.</doc>
+<status status="PASS" starttime="20220223 17:21:04.240" endtime="20220223 17:21:04.247"/>
+</kw>
+<kw name="Set Worksheet Value" library="RPA.Excel.Files">
+<arg>1</arg>
+<arg>1</arg>
+<arg>Nome</arg>
+<doc>Alias for keyword ``Set cell value``, see the original keyword
+for documentation.</doc>
+<status status="PASS" starttime="20220223 17:21:04.249" endtime="20220223 17:21:04.251"/>
+</kw>
+<kw name="Set Worksheet Value" library="RPA.Excel.Files">
+<arg>1</arg>
+<arg>2</arg>
+<arg>Preço</arg>
+<doc>Alias for keyword ``Set cell value``, see the original keyword
+for documentation.</doc>
+<status status="PASS" starttime="20220223 17:21:04.252" endtime="20220223 17:21:04.254"/>
+</kw>
+<kw name="Set Worksheet Value" library="RPA.Excel.Files">
+<arg>1</arg>
+<arg>3</arg>
+<arg>Descrição</arg>
+<doc>Alias for keyword ``Set cell value``, see the original keyword
+for documentation.</doc>
+<status status="PASS" starttime="20220223 17:21:04.255" endtime="20220223 17:21:04.257"/>
+</kw>
+<kw name="Set Worksheet Value" library="RPA.Excel.Files">
+<arg>1</arg>
+<arg>4</arg>
+<arg>Quantidade</arg>
+<doc>Alias for keyword ``Set cell value``, see the original keyword
+for documentation.</doc>
+<status status="PASS" starttime="20220223 17:21:04.258" endtime="20220223 17:21:04.259"/>
+</kw>
+<kw name="Set Worksheet Value" library="RPA.Excel.Files">
+<arg>1</arg>
+<arg>5</arg>
+<arg>_id</arg>
+<doc>Alias for keyword ``Set cell value``, see the original keyword
+for documentation.</doc>
+<status status="PASS" starttime="20220223 17:21:04.261" endtime="20220223 17:21:04.262"/>
+</kw>
+<kw name="Set Worksheet Value" library="RPA.Excel.Files">
+<arg>1</arg>
+<arg>6</arg>
+<arg>imagem</arg>
+<doc>Alias for keyword ``Set cell value``, see the original keyword
+for documentation.</doc>
+<status status="PASS" starttime="20220223 17:21:04.264" endtime="20220223 17:21:04.267"/>
+</kw>
+<kw name="Http Get" library="RPA.HTTP">
+<var>${response}</var>
+<arg>https://serverest.dev/produtos</arg>
+<doc>A helper method for ``Get Request`` that will create a session, perform GET
+request, and store the target file, if set by the ``target_file`` parameter.</doc>
+<msg timestamp="20220223 17:21:04.269" level="INFO">Creating a new HTTP session</msg>
+<msg timestamp="20220223 17:21:04.270" level="INFO">Creating Session using : alias=rpasession_alias.httpsserverest.dev, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg timestamp="20220223 17:21:04.746" level="INFO">GET Request : url=https://serverest.dev/produtos 
+ path_url=/produtos 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220223 17:21:04.747" level="INFO">GET Response : url=https://serverest.dev/produtos 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '9722af57-991c-4776-af20-2778bad28c5d', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '124e03c685faa0f4db8bfb73ce94f3d0', 'Date': 'Wed, 23 Feb 2022 20:21:05 GMT', 'Server': 'Google Frontend', 'Content-Length': '13596'} 
+ body={
+    "quantidade": 64,
+    "produtos": [
+        {
+            "nome": "Logitech MX Vertical modelo GFjsS1",
+            "preco": 470,
+            "descricao": "Mouse",
+            "quantidade": 200,
+            "_id": "0gYA3dRBseKXPJsK"
+        },
+        {
+            "nome": "479325480527347Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "1JHG9PQxMwt9X8is"
+        },
+        {
+            "nome": "Aspirador de pó",
+            "preco": 300,
+            "descricao": "Aspira e varre.",
+            "quantidade": 65,
+            "imagem": "C:\\fakepath\\imagem.jpg",
+            "_id": "1LcPYZpbgPu9O6HB"
+        },
+        {
+            "nome": "Teclado Gamer TX  modelo sAJA0t",
+            "preco": 150,
+            "descricao": "Teclado gamer",
+            "quantidade": 50,
+            "_id": "1XynoJwFwmez18my"
+        },
+        {
+            "nome": "LG monitor curvo WS modelo rc2hQq",
+            "preco": 2500,
+            "descricao": "Monitor",
+            "quantidade": 10,
+            "_id": "4Gmu8bx6AbDPov5G"
+        },
+        {
+            "nome": "810465033627260Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 379,
+            "_id": "4X5pgdQxM6IIX4rA"
+        },
+        {
+            "nome": "226389440875527Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "4a2hOG066FHwO5Mj"
+        },
+        {
+            "nome": "298846521724001Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 379,
+            "_id": "6BqW2iR7hLOZOgGa"
+        },
+        {
+            "nome": "376181130146300Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 0,
+            "_id": "7ioWmPERVSzv8Cal"
+        },
+        {
+            "nome": "Kit Home Office 2022 modelo BuRZN0",
+            "preco": 450,
+            "descricao": "Kit completo câmera, teclado, apoio de mão e headset básico",
+            "quantidade": 250,
+            "_id": "8ZEU8sspebxnqouk"
+        },
+        {
+            "nome": "489061353133484Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "9VYEcCoDiDAjZVJT"
+        },
+        {
+            "nome": "262709022252877Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "9YeypzaeC2sDmD5K"
+        },
+        {
+            "nome": "318942741872346Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "AYoPsYDHqW6EiAXD"
+        },
+        {
+            "nome": "Smart TV",
+            "preco": 1350,
+            "descricao": "Led, 32 polegadas.",
+            "quantidade": 200,
+            "imagem": "C:\\fakepath\\imagem.jpg",
+            "_id": "AfTY7e6fyLQWz4No"
+        },
+        {
+            "nome": "Logitech MX Vertical",
+            "preco": 470,
+            "descricao": "Mouse",
+            "quantidade": 382,
+            "_id": "BeeJh5lz3k6kSIzA"
+        },
+        {
+            "nome": "Notebook Asus Ryzen 5 f0vqsh",
+            "preco": 2300,
+            "descricao": "Notebook Gamer QEB2sn",
+            "quantidade": 1,
+            "_id": "Dd3ahsnyWBPk6ADh"
+        },
+        {
+            "nome": "540855777578760Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "Dk2GQo7p0EhubfUd"
+        },
+        {
+            "nome": "Caixa de som PC Sound modelo F0W5nQ",
+            "preco": 520,
+            "descricao": "Caixa de som PC",
+            "quantidade": 320,
+            "_id": "ERqCFokbUQg2PLWN"
+        },
+        {
+            "nome": "166592978793504Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "FeLFDoR7mroVPPgs"
+        },
+        {
+            "nome": "698061759314375Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "GFiJ8qCr6F0U34Ng"
+        },
+        {
+            "nome": "588209093855271Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 379,
+            "_id": "I1tPBphQMHpMvzTt"
+        },
+        {
+            "nome": "487351770773334Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "JivuQbo3zV68zKxf"
+        },
+        {
+            "nome": "102395548698719Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "JnQz0MD5BOYyholq"
+        },
+        {
+            "nome": "Notebook Asus Ryzen 5 BfD46b",
+            "preco": 2300,
+            "descricao": "Notebook Gamer 5j5Nz0",
+            "quantidade": 1,
+            "_id": "JvQ32PYMFEqq74fv"
+        },
+        {
+            "nome": "Samsung 60 polegadas",
+            "preco": 5240,
+            "descricao": "TV",
+            "quantidade": 49977,
+            "_id": "K6leHdftCeOJj8BJ"
+        },
+        {
+            "nome": "50775511802487Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "OPLBExMM7WKNRJsK"
+        },
+        {
+            "nome": "472607624332832Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "PNI6dnh5l1JhZIWU"
+        },
+        {
+            "nome": "381469017469132Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "Qnotm6SnJSIKnq07"
+        },
+        {
+            "nome": "653845789953118Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "S9aMm2yak3AMJoVw"
+        },
+        {
+            "nome": "Enormous Copper Table",
+            "preco": 23,
+            "descricao": "Marble",
+            "quantidade": 74,
+            "_id": "Tme0CO3yJ9vAcQ7K"
+        },
+        {
+            "nome": "328510257621825Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "Uwgj1On7sjZPVjkT"
+        },
+        {
+            "nome": "853544386447448Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "XgPsu49OSEvGfRt9"
+        },
+        {
+            "nome": "Smartphone S",
+            "preco": 1300,
+            "descricao": "Smartphone de última geração.",
+            "quantidade": 100,
+            "imagem": "C:\\fakepath\\imagem.jpg",
+            "_id": "Xr6ZYYcK5azUbGfw"
+        },
+        {
+            "nome": "476081519384548Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "ZgGwpgkbAGwJ9JxV"
+        },
+        {
+            "nome": "Desktop gamer AMD Fighter modelo 3SeKGE",
+            "preco": 3500,
+            "descricao": "PC Fighter gamer",
+            "quantidade": 5,
+            "_id": "bAs4JWHhugCwJyNW"
+        },
+        {
+            "nome": "382553220168110Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "dWN3rHkM2LmP13Lo"
+        },
+        {
+            "nome": "Desktop office AMD Basix modelo 1FTuJU",
+            "preco": 2500,
+            "descricao": "AMD Basix pc básico",
+            "quantidade": 15,
+            "_id": "dxn2TQh6MpiwSZvf"
+        },
+        {
+            "nome": "343195233952438Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "gRCShpXECd7XhE4V"
+        },
+        {
+            "nome": "484133958804852Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "hBxZgRqaCjmEW7Dy"
+        },
+        {
+            "nome": "Headset gamer RZR modelo W7A7wd",
+            "preco": 180,
+            "descricao": "Headset gamer",
+            "quantidade": 280,
+            "_id": "hJTXqPp2e8vTgtNM"
+        },
+        {
+            "nome": "557118917376816Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "hxVr3bmKJM7fo1LN"
+        },
+        {
+            "nome": "114843893830641Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 379,
+            "_id": "jveYkcAqKC2vk1MK"
+        },
+        {
+            "nome": "79324594493991Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "jyzD1HWuQ1Ckhbhn"
+        },
+        {
+            "nome": "273363496979058Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "kAnxBblCPDMBrMzq"
+        },
+        {
+            "nome": "635691810524803Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "kUex4Bum2IOQ5szM"
+        },
+        {
+            "nome": "323225535858373Logitech MXteste",
+            "preco": 472,
+            "descricao": "Mouse",
+            "quantidade": 380,
+            "_id": "kVyLcO0I4j6w6fqW"
+        },
+        {
+            "nome": "Fone bluetooth Master modelo PxsbO0",
+            "preco": 250,
+            "descricao": "Fone bluetooth",
+            "quantidade": 150,
+            "_id": "kughS8ZT3ogUmDWp"
+        },
+        {
+            "nome": "603180988430278Logit... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg timestamp="20220223 17:21:04.748" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220223 17:21:04.268" endtime="20220223 17:21:04.749"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>css=[data-testid="listar-produtos"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220223 17:21:04.750" endtime="20220223 17:21:04.759"/>
+</kw>
+<kw name="Append Rows To Worksheet" library="RPA.Excel.Files">
+<arg>${response.json()}[produtos]</arg>
+<doc>Append values to the end of the worksheet.</doc>
+<status status="PASS" starttime="20220223 17:21:04.760" endtime="20220223 17:21:04.781"/>
+</kw>
+<kw name="Save Workbook" library="RPA.Excel.Files">
+<doc>Save the active workbook.</doc>
+<status status="PASS" starttime="20220223 17:21:04.783" endtime="20220223 17:21:04.824"/>
+</kw>
+<kw name="Close Workbook" library="RPA.Excel.Files">
+<doc>Close the active workbook.</doc>
+<msg timestamp="20220223 17:21:04.827" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000001DDD2D50648&gt;</msg>
+<status status="PASS" starttime="20220223 17:21:04.826" endtime="20220223 17:21:04.828"/>
+</kw>
+<status status="PASS" starttime="20220223 17:21:04.238" endtime="20220223 17:21:04.829"/>
+</kw>
+<status status="PASS" starttime="20220223 17:20:39.313" endtime="20220223 17:21:04.831"/>
+</test>
+<doc>Test RPA form web</doc>
+<status status="PASS" starttime="20220223 17:20:34.567" endtime="20220223 17:21:04.836"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
